@@ -1,0 +1,15 @@
+qemu-desktop
+qemu-emulators-full
+virt-manager
+virt-viewer
+dnsmasq
+vde2
+bridge-utils
+openbsd-netcat
+libvirt
+edk2-omvf
+swtpm
+spice-vdagent
+spice-gtk
+waydroid
+waydroid-image

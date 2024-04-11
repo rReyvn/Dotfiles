@@ -1,0 +1,10 @@
+visual-studio-code-bin
+android-tools
+npm
+nodejs
+rustup
+bun-bin
+deno
+
+docker ? podman podman-docker
+docker-compose ? podman-compose

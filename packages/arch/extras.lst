@@ -1,0 +1,25 @@
+linux-cachyos-lts
+linux-cachyos-lts-headers
+tela-circle-icon-theme-standard
+bibata-cursor-git
+matugen-bin
+gvfs
+adw-gtk-theme
+xdg-desktop-portal-gtk
+dconf-editor
+gnome-tweaks
+gnome-disk-utility
+piper
+
+# Optional
+flatpak
+abaddon
+obs-studio-browser
+cava
+tty-clock
+distrobox
+dragondrop
+zed
+cloudflared
+tailscale
+starship

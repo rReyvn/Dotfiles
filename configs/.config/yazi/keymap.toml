@@ -1,0 +1,14 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "." ]
+run  = "cd $DOTFILES_DIR"
+desc = "Cd to Dotfiles"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "1" ]
+run  = "cd $LINUX_HDD_DIR"
+desc = "Cd to Linux HDD"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "2" ]
+run  = "cd $NTFS_HDD_DIR"
+desc = "Cd to NTFS HDD"
