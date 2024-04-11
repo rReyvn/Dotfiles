@@ -1,0 +1,37 @@
+[global]
+  font = Inter Nerd Font Propo 10
+  monitor = 0
+  follow = keyboard
+  gap_size = 4
+  separator_color= frame
+  frame_width = 1
+  corner_radius = 4
+  enable_recursive_icon_lookup = true
+  origin = top-right
+  progress_bar_frame_width = 1
+  progress_bar_corner_radius = 4
+  alignment = center
+  icon_theme = Papirus-Dark
+  max_icon_size = 32
+  enable_recursive_icon_lookup = true
+
+[urgency_low]
+  background = "#1d2021"
+  foreground = "#d4be98"
+  frame_color = "#2e3b3b"
+  highlight = "#d4be98"
+  timeout = 5
+
+[urgency_normal]
+  background = "#282828"
+  foreground = "#d4be98"
+  frame_color = "#3c3836"
+  highlight = "#d4be98"
+  timeout = 8
+
+[urgency_critical]
+  background = "#3c1f1e"
+  foreground = "#d4be98"
+  frame_color = "#ea6962"
+  highlight = "#ea6962"
+  timeout = 0

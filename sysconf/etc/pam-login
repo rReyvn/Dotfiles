@@ -1,0 +1,4 @@
+# edit /etc/pam.d/login
+# Paste this two line to end of each other section (auth & session section)
+auth       optional     pam_gnome_keyring.so
+session    optional     pam_gnome_keyring.so auto_start

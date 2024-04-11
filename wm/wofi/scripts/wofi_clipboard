@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+wofi_show_clipboard() {
+  history="$(cliphist list | wofi --dmenu | cliphist decode)"
+
+  if [[ -n "$history" ]]; then
+    echo -n "$history" | wl-copy
+  fi
+}
+
+case $1 in
+show)
+  wofi_show_clipboard
+  ;;
+esac

@@ -1,0 +1,40 @@
+#!/bin/env bash
+
+SS_FILE_PATH=~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+SS_DIR=~/Pictures/Screenshots/
+
+check_dir_exist() {
+  if [ ! -d "$SS_DIR" ]; then
+    mkdir -p $SS_DIR
+  fi
+}
+
+take_full_ss() {
+  grimblast --notify --freeze copysave output "$SS_FILE_PATH"
+}
+
+take_rect_ss() {
+  grimblast --notify --freeze copysave area "$SS_FILE_PATH"
+}
+
+take_color_pick() {
+  if [[ -n "$(hyprpicker -a)" ]]; then
+    notify-send "Color picker" "Color copied to clipboard"
+  fi
+}
+
+case $1 in
+full_screenshot)
+  check_dir_exist
+  take_full_ss
+  ;;
+
+rectangle_screenshot)
+  check_dir_exist
+  take_rect_ss
+  ;;
+
+color_pick)
+  take_color_pick
+  ;;
+esac
