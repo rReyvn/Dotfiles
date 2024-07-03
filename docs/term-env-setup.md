@@ -4,7 +4,7 @@
 
 ```
 yay -S stow kitty fish git make zoxide fzf ripgrep fd bat eza wl-clipboard yazi \
-jq unarchiver lazygit btop --needed
+dragon-drop jq unarchiver lazygit btop --needed
 ```
 
 ## NPM Setup
