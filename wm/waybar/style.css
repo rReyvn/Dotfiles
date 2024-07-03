@@ -43,8 +43,10 @@
 }
 
 #workspaces button.active {
-  border-radius: 4px;
-  background-color: @base03;
+  font-size: 0.99em;
+  border-radius: 0;
+  border-width: 0 0 2px 0;
+  border-color: @base11;
   color: @base07;
 }
 
@@ -63,7 +65,6 @@
 #submap {
   margin: 4px;
   padding: 0 6px;
-  border-radius: 4px;
   color: @base05;
   background-color: @base0C;
 }
@@ -72,7 +73,6 @@
   font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
   margin: 4px;
   padding: 0 6px;
-  border-radius: 4px;
   background-color: @base03;
 }
 
@@ -90,7 +90,6 @@
 #language {
   margin: 4px 2px;
   padding: 0;
-  border-radius: 4px;
   min-width: 20px;
 }
 
@@ -118,7 +117,6 @@ tooltip {
   background: @base01;
   color: @base08;
   border: 1px solid @base12;
-  border-radius: 4px;
 }
 
 tooltip label {
