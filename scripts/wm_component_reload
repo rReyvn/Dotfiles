@@ -13,4 +13,10 @@ dunst)
   sleep 0.2
   dunst &
   ;;
+ags)
+  killall ags
+  pkill ags
+  sleep 0.2
+  ags -c ~/.config/ags/config.js &
+  ;;
 esac

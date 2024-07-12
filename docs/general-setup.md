@@ -26,15 +26,15 @@
     ```
 
 - Apps
-  `yay -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide prismlauncher-qt5-bin --needed`
+  `yay -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide prismlauncher-qt5-bin zed vulkan-radeon intellij-idea-community-edition`
 
 - Utilities
-  `yay -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu --needed`
+  `yay -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu`
 
 - Flatpak Setup
 
   ```
-  yay -S flatpak --needed
+  yay -S flatpak
   flatpak install flathub com.obsproject.Studio
   ```
 

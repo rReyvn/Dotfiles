@@ -37,6 +37,7 @@
 #workspaces button {
   padding: 0 6px;
   color: @base07;
+  border-radius: 0;
 }
 
 #workspaces button.visible {
@@ -44,7 +45,6 @@
 
 #workspaces button.active {
   font-size: 0.99em;
-  border-radius: 0;
   border-width: 0 0 2px 0;
   border-color: @base11;
   color: @base07;
@@ -59,9 +59,9 @@
 }
 
 #window {
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
-
 #submap {
   margin: 4px;
   padding: 0 6px;

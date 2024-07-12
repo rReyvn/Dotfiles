@@ -111,6 +111,7 @@ vim.list_extend(ensure_installed, {
 	"prettierd",
 	"shfmt",
 	"shellcheck",
+	"eslint",
 })
 require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

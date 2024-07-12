@@ -7,6 +7,7 @@ require("conform").setup({
 		html = { { "prettierd", "prettier" } },
 		markdown = { { "prettierd", "prettier" } },
 		bash = { "shfmt" },
+		json = { { "prettierd", "prettier" } },
 		-- python = { "isort", "black" },
 		-- blade = { "blade_formatter" },
 	},
