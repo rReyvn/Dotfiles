@@ -1,5 +1,5 @@
 [global]
-  font = JetBrainsMono Nerd Font 10
+  font = Inter Nerd Font Propo 10
   monitor = 0
   follow = keyboard
   gap_size = 4
@@ -11,11 +11,11 @@
   progress_bar_frame_width = 1
   progress_bar_corner_radius = 4
   alignment = center
-  icon_theme = "breeze"
+  icon_theme = Papirus-Dark
   max_icon_size = 32
   enable_recursive_icon_lookup = true
 
-[urgency_low
+[urgency_low]
   background = "#1d2021"
   foreground = "#d4be98"
   frame_color = "#2e3b3b"

@@ -23,7 +23,7 @@
 }
 
 #waybar {
-  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-family: "Inter Nerd Font Propo", sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: @base08;
@@ -59,7 +59,6 @@
 }
 
 #window {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 #submap {
@@ -70,7 +69,6 @@
 }
 
 #tray {
-  font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
   margin: 4px;
   padding: 0 6px;
   background-color: @base03;

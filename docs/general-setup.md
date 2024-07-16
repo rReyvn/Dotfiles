@@ -51,8 +51,8 @@
     ```
   - Fonts
     ```
-    yay -S inter-font ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-ms-fonts \
-    ttf-nerd-fonts-symbols-mono ttf-font-awesome otf-font-awesome ttf-jetbrains-mono-nerd --needed
+    yay -S inter-font ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono \
+    ttf-font-awesome otf-font-awesome ttf-jetbrains-mono-nerd nerd-fonts-inter ttf-ms-win11-auto --needed
     ```
   - [Bibata-cursor](https://www.bibata.live/studio)
   - Mount HDD
