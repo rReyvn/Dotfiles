@@ -93,7 +93,7 @@
 
 #idle_inhibitor {
   background-color: @base03;
-  padding: 4px;
+  padding: 3px;
 }
 
 #pulseaudio.muted {

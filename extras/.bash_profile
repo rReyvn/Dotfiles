@@ -1,8 +1,8 @@
 #
 # ~/.bash_profile
 #
-if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  exec Hyprland
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "$XDG_VTNR" = 1 ]; then
+  exec Hyprland >/dev/null
 fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

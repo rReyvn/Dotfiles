@@ -51,19 +51,20 @@
     ```
   - Fonts
     ```
-    yay -S inter-font ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono \
-    ttf-font-awesome otf-font-awesome ttf-jetbrains-mono-nerd nerd-fonts-inter ttf-ms-win11-auto --needed
+    yay -S inter-font ttf-jetbrains-mono-nerd nerd-fonts-inter ttf-ms-win11-auto --needed
+    ```
+  - Glyphs support for non-nerd fonts
+    ```
+    yay -S ttf-font-awesome otf-font-awesome ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono --needed
     ```
   - [Bibata-cursor](https://www.bibata.live/studio)
   - Mount HDD
-
     ```sh
     sudo blkid # Check HDD UUID
     sudo mkdir /mnt/HDD
     # Add this to /etc/fstab
     UUID=<HDD-UUID> /mnt/HDD ntfs-3g x-gvfs-show,uid=1000,guid=1000,dmask=022,fmask=133 0 0
     ```
-
   - Environtment Variables
 
     ```
@@ -77,12 +78,10 @@
     ```
 
   - Silent Boot
-
     ```
     # Add this to kernel parameter
     quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3
     ```
-
   - Change default file manager to nautilus
     ```
     xdg-mime default org.gnome.Nautilus.desktop inode/directory

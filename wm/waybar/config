@@ -22,10 +22,10 @@
       "format": "{}"
     },
     "idle_inhibitor": {
-      "format": "{icon}",
+      "format": " {icon} ",
       "format-icons": {
-        "activated": " ",
-        "deactivated": " "
+        "activated": "",
+        "deactivated": ""
       }
     },
     "tray": {
@@ -36,15 +36,15 @@
       "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-      "format": "{usage}%  ",
+      "format": " {usage}%",
       "tooltip": false
     },
     "memory": {
-      "format": "{}%  "
+      "format": " {}%"
     },
     "temperature": {
       "critical-threshold": 80,
-      "format": "{temperatureC}°C ",
+      "format": " {temperatureC}°C",
     },
     "battery": {
       "states": {
@@ -52,7 +52,7 @@
         "warning": 30,
         "critical": 15
       },
-      "format": "{capacity}% {icon}",
+      "format": "{icon} {capacity}%",
       "format-charging": "{capacity}% 🗲 ",
       "format-plugged": "{capacity}%  ",
       "format-alt": "{time} {icon}",
@@ -62,47 +62,49 @@
       "bat": "BAT2"
     },
     "network": {
-      "format": "{essid} 󰖩 ",
-      "format-wifi": "{essid} 󰖩 ",
-      "format-ethernet": "Eth  ",
-      "format-disconnected": "No Connection 󰖪 ",
-      "format-disabled": "Off 󱚼 ",
+      "format": "󰖩",
+      "format-wifi": "󰖩",
+      "format-ethernet": "",
+      "format-disconnected": "󰖪",
+      "format-disabled": "󱚼",
       "tooltip-format": "{ipaddr}\n{ifname}",
       "tooltip-format-wifi": "{ipaddr}\n{essid}\t({signalStrength}%)",
       "tooltip-format-ethernet": "{ipaddr}\n{ifname}",
       "tooltip-format-disconnected": "Disconnected",
       "tooltip-format-disabled": "Disabled",
-      "on-click": "rfkill toggle wifi",
+      "on-click": "nm-connection-editor",
+      "on-click-middle": "rfkill toggle wifi" ,
       "on-click-right": "kitty -e nmtui"
     },
     "bluetooth": {
       "format": "",
       "format-on": "",
       "format-disabled": "󰂲",
-      "format-connected": "{device_alias} 󰂱",
+      "format-connected": "󰂱 {device_alias}",
       "format-connected-battery": "{device_battery_percentage}% 󰂱",
       "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-      "on-click": "rfkill toggle bluetooth",
+      "on-click": "blueberry",
+      "on-click-middle": "rfkill toggle bluetooth" ,
       "on-click-right": "kitty -e bluetoothctl"
     },
     "pulseaudio": {
-      "format": "{volume}%{icon} {format_source}",
+      "format": "{icon} {volume}%  |  {format_source}",
       "format-bluetooth": "{volume}% {icon}󰂰 {format_source}",
       "format-bluetooth-muted": " {icon} {format_source}",
       "format-muted": " {format_source}",
-      "format-source": "{volume}% ",
+      "format-source": " {volume}%",
       "format-source-muted": " ",
       "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
+        "headphone": "",
+        "hands-free": "󱡏",
+        "headset": "",
         "phone": "",
         "portable": "",
         "car": "",
-        "default": ["", "", ""]
+        "default": ""
       },
       "on-click": "pavucontrol"
     },

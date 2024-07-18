@@ -7,7 +7,7 @@ vim.g.netrw_keepdir = 0 -- Sync current dir and browsing dir
 
 vim.opt.autoindent = true
 vim.opt.breakindent = true
-vim.opt.clipboard = "" --Set "unnamedplus" to sync with system clipboard
+-- vim.opt.clipboard = "" --Set "unnamedplus" to sync with system clipboard
 vim.opt.completeopt = "menu,menuone,noselect"
 vim.opt.conceallevel = 0
 vim.opt.confirm = true
