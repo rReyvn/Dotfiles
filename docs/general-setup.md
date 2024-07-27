@@ -26,7 +26,7 @@
     ```
 
 - Apps
-  `yay -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide prismlauncher-qt5-bin zed vulkan-radeon intellij-idea-community-edition`
+  `yay -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide zed vulkan-radeon intellij-idea-community-edition`
 
 - Utilities
   `yay -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu`

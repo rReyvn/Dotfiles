@@ -5,7 +5,7 @@
 
     "modules-left": ["hyprland/workspaces", "idle_inhibitor", "cpu", "memory", "temperature"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["hyprland/submap", "backlight", "battery", "network", "bluetooth", "pulseaudio", "tray", "clock"],
+    "modules-right": ["hyprland/submap", "battery", "network", "bluetooth", "backlight", "pulseaudio", "tray", "clock"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,

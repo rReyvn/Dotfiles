@@ -23,7 +23,7 @@
 
 ```
 yay -S hyprland hyprpaper hyprcursor hypridle hyprlock hyprpicker xdg-desktop-portal-hyprland waybar wofi dunst \
-grim wf-recorder slurp playerctl brightnessctl xorg-xev wev cliphist wlogout git ntfs-3g mpv yt-dlp \
+grimblast-git gpu-screen-recorder-gtk libva-mesa-driver playerctl brightnessctl xorg-xev wev cliphist wlogout git ntfs-3g mpv yt-dlp \
 nwg-look adw-gtk-theme nautilus loupe file-roller gnome-keyring polkit-gnome gnome-tweaks papirus-icon-theme \
 gnome-calculator evince xdg-desktop-portal-gtk sshfs network-manager-applet \
 qt5-wayland qt6-wayland qt6ct qt5ct kvantum-qt5 kvantum kvantum-theme-libadwaita-git --needed

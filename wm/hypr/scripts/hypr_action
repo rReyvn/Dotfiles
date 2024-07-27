@@ -9,20 +9,12 @@ check_dir_exist() {
   fi
 }
 
-notify_ss_taken() {
-  dunstify -u normal -i NONE "Screenshot" "Saved at $SS_DIR"
-}
-
 take_full_ss() {
-  grim -t jpeg "$SS_FILE_PATH" && grim - | wl-copy
+  grimblast --notify --cursor --freeze copysave output "$SS_FILE_PATH"
 }
 
 take_rect_ss() {
-  area="$(slurp -d)"
-
-  if [[ -n "$area" ]]; then
-    grim -g "$area" -t jpeg "$SS_FILE_PATH" && grim -g "$area" - | wl-copy
-  fi
+  grimblast --notify --cursor --freeze copysave area "$SS_FILE_PATH"
 }
 
 take_color_pick() {
@@ -35,13 +27,11 @@ case $1 in
 full_screenshot)
   check_dir_exist
   take_full_ss
-  notify_ss_taken
   ;;
 
 rectangle_screenshot)
   check_dir_exist
   take_rect_ss
-  notify_ss_taken
   ;;
 
 color_pick)
