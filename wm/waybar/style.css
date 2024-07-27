@@ -61,7 +61,9 @@
 #window {
   font-weight: 600;
 }
+
 #submap {
+  border-radius: 4px;
   margin: 4px;
   padding: 0 6px;
   color: @base05;
@@ -74,9 +76,7 @@
   background-color: @base03;
 }
 
-#mode,
-#battery,
-#cpu,
+#mode, #backlight, #battery, #cpu,
 #memory,
 #network,
 #bluetooth,
@@ -89,6 +89,7 @@
   margin: 4px 2px;
   padding: 0;
   min-width: 20px;
+  border-radius: 4px;
 }
 
 #idle_inhibitor {

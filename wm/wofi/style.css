@@ -1,6 +1,7 @@
 window {
   margin: 0px;
   border: 2px solid #928374;
+  border-radius: 8px;
   background-color: #282828;
 }
 

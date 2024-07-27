@@ -5,7 +5,7 @@
 
     "modules-left": ["hyprland/workspaces", "idle_inhibitor", "cpu", "memory", "temperature"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["hyprland/submap", "battery", "network", "bluetooth", "pulseaudio", "tray", "clock"],
+    "modules-right": ["hyprland/submap", "backlight", "battery", "network", "bluetooth", "pulseaudio", "tray", "clock"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -46,6 +46,12 @@
       "critical-threshold": 80,
       "format": " {temperatureC}°C",
     },
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": [""],
+      "on-scroll-up": "brightnessctl set +5",
+      "on-scroll-down": "brightnessctl set 5-"
+    },
     "battery": {
       "states": {
         "good": 95,
@@ -53,8 +59,8 @@
         "critical": 15
       },
       "format": "{icon} {capacity}%",
-      "format-charging": "{capacity}% 🗲 ",
-      "format-plugged": "{capacity}%  ",
+      "format-charging": "🗲 {capacity}%",
+      "format-plugged": " {capacity}%",
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
     },
@@ -81,7 +87,7 @@
       "format-on": "",
       "format-disabled": "󰂲",
       "format-connected": "󰂱 {device_alias}",
-      "format-connected-battery": "{device_battery_percentage}% 󰂱",
+      "format-connected-battery": "󰂱 {device_battery_percentage}%",
       "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -92,9 +98,9 @@
     },
     "pulseaudio": {
       "format": "{icon} {volume}%  |  {format_source}",
-      "format-bluetooth": "{volume}% {icon}󰂰 {format_source}",
-      "format-bluetooth-muted": " {icon} {format_source}",
-      "format-muted": " {format_source}",
+      "format-bluetooth": "{icon} {volume}%  |  {format_source}",
+      "format-bluetooth-muted": "  |  {format_source}",
+      "format-muted": "  |   {format_source}",
       "format-source": " {volume}%",
       "format-source-muted": " ",
       "format-icons": {
@@ -104,7 +110,7 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": ""
+        "default": ["", ""]
       },
       "on-click": "pavucontrol"
     },

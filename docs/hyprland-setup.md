@@ -4,10 +4,19 @@
 
 - Fill in username automatically and only prompt password to login
   /etc/systemd/system/getty@tty1.service.d/skip-username.conf
+
   ```
   [Service]
   ExecStart=
-  ExecStart=-/sbin/agetty -o '-p -- reyvn' --noclear --skip-login - $TERM
+  ExecStart=-/sbin/agetty -o '-p -- <USERNAME>' --noclear --skip-login - $TERM
+  ```
+
+- Or for autologin create file
+  /etc/systemd/system/getty@tty1.service.d/autologin.conf
+  ```
+  [Service]
+  ExecStart=
+  ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin username %I $TERM
   ```
 
 ## Package & Dependencies List
