@@ -76,7 +76,10 @@
   background-color: @base03;
 }
 
-#mode, #backlight, #battery, #cpu,
+#mode,
+#backlight,
+#battery,
+#cpu,
 #memory,
 #network,
 #bluetooth,

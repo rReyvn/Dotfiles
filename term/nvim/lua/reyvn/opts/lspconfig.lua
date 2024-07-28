@@ -73,6 +73,13 @@ local servers = {
 		init_options = {
 			provideFormatter = false,
 		},
+		-- settings = {
+		-- 	css = {
+		-- 		lint = {
+		-- 			unknownAtRules = "ignore",
+		-- 		},
+		-- 	},
+		-- },
 	},
 	lua_ls = {
 		-- cmd = {...},
