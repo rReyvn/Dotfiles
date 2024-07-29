@@ -2,12 +2,12 @@ require("conform").setup({
 	-- Define your formatters
 	formatters_by_ft = {
 		lua = { "stylua" },
-		javascript = { { "prettierd", "prettier" } },
-		css = { { "prettierd", "prettier" } },
-		html = { { "prettierd", "prettier" } },
-		markdown = { { "prettierd", "prettier" } },
+		javascript = { "prettierd", "prettier", stop_after_first = true },
+		css = { "prettierd", "prettier", stop_after_first = true },
+		html = { "prettierd", "prettier", stop_after_first = true },
+		markdown = { "prettierd", "prettier", stop_after_first = true },
 		bash = { "shfmt" },
-		json = { { "prettierd", "prettier" } },
+		json = { "prettierd", "prettier", stop_after_first = true },
 		-- python = { "isort", "black" },
 		-- blade = { "blade_formatter" },
 	},

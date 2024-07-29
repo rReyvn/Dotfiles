@@ -5,7 +5,7 @@
   - Generate SSH Key
     ```sh
     ssh-keygen -t ed25519 -f <ssh_file_name> -C <EMAIL_STRING>
-    eval `ssh-agent -s`
+    ssh-agent -s
     ssh-add .ssh/<ssh_file_name_alt_account>
     ```
   - Setup SSH Key to Github
@@ -29,7 +29,7 @@
   `yay -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide zed vulkan-radeon intellij-idea-community-edition`
 
 - Utilities
-  `yay -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu`
+  `yay -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu gnome-boxes`
 
 - Flatpak Setup
 
@@ -60,16 +60,18 @@
   - [Bibata-cursor](https://www.bibata.live/studio)
   - Mount HDD
     ```sh
-    sudo blkid # Check HDD UUID
+    sudo blkid # Check Disk UUID
     sudo mkdir /mnt/HDD
+    sudo mkdir /mnt/win
     # Add this to /etc/fstab
-    UUID=<HDD-UUID> /mnt/HDD ntfs-3g x-gvfs-show,uid=1000,guid=1000,dmask=022,fmask=133 0 0
+    UUID=<PARTITION-UUID>                     /mnt/win/      ntfs-3g x-gvfs-show,uid=1000,guid=1000,dmask=022,fmask=133,nofail,noauto 0 0
+    UUID=<HDD-UUID>                           /mnt/HDD       ntfs-3g x-gvfs-show,uid=1000,guid=1000,dmask=022,fmask=133 0 0
     ```
   - Environtment Variables
 
     ```
     # Add this to /etc/environment
-    BROWSER=/usr/bin/firefox
+    BROWSER=/usr/bin/brave
     EDITOR=/usr/bin/nvim
     TERMINAL=/usr/bin/kitty
 

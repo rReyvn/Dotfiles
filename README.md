@@ -11,7 +11,7 @@ Dotfiles tailored only for my machine in mind
 - Dotfiles Installation
   - Clone Repository
     ```sh
-    git clone git@github.com-reyvn:rReyvn/dotfiles.git && cd dotfiles
+    git clone git@github.com:rReyvn/dotfiles.git && cd dotfiles
     ```
   - Install
     ```makefile
