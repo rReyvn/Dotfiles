@@ -88,3 +88,22 @@
     ```
     xdg-mime default org.gnome.Nautilus.desktop inode/directory
     ```
+  - Secure Boot Setup
+    ```
+    yay -S sbctl
+    ```
+    Reboot to firmware setting and clear secure boot key then boot to linux
+    ```
+    sudo sbctl status
+    sudo sbctl create-keys
+    sudo sbctl enroll-keys -m
+    sudo sbctl status
+    ```
+    Sign kernel image & boot loader
+    ```
+    sudo sbctl verify
+    #This script sign automatically but provided only in cachyOS by default
+    sudo sbctl-batch-sign
+    sudo sbctl verify
+    ```
+    If everything done, reboot to firmware setting again and turn secure boot on then test it by booting into linux
