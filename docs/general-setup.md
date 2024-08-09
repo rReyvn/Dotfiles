@@ -26,36 +26,69 @@
     ```
 
 - Apps
-  `yay -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide zed vulkan-radeon intellij-idea-community-edition`
+  `paru -S brave-bin visual-studio-code-bin obsidian vesktop-bin neovide zed vulkan-radeon intellij-idea-community-edition`
 
 - Utilities
-  `yay -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu gnome-boxes`
+  `paru -S syncthing docker docker-rootless-extras docker-compose distrobox ncdu`
 
 - Flatpak Setup
 
   ```
-  yay -S flatpak
+  paru -S flatpak
   flatpak install flathub com.obsproject.Studio
+  ```
+
+- Virtual Machine Setup
+
+  ```
+  paru -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode ebtables iptables
+  ```
+
+  Start Service
+
+  ```
+  sudo systemctl enable libvirtd --now
+  sudo systemctl enable virtnetworkd --now
+  ```
+
+  Commented out from /etc/libvirt/libvirt.conf
+
+  ```
+  unix_sock_group = "libvirt"
+  unix_sock_rw_perms = "0770"
+  ```
+
+  Add user account to libvirt group
+
+  ```
+  sudo usermod -a -G libvirt $(whoami)
+  newgrp libvirt
+  ```
+
+  Restart libvirt daemon
+
+  ```
+  sudo systemctl restart libvirtd
   ```
 
 - Misc
 
   - Wifi driver fix
-    `yay -S rtl8821ce-dkms-git`
+    `paru -S rtl8821ce-dkms-git`
   - Soft lock fix
-    `yay -S disable-c6-systemd`
+    `paru -S disable-c6-systemd`
   - Sync dual-boot bluetooth devices
     ```
-    yay -S python-pipx
+    paru -S python-pipx
     pipx install bt-dualboot
     ```
   - Fonts
     ```
-    yay -S inter-font ttf-jetbrains-mono-nerd nerd-fonts-inter ttf-ms-win11-auto --needed
+    paru -S inter-font ttf-jetbrains-mono-nerd nerd-fonts-inter ttf-ms-win11-auto --needed
     ```
   - Glyphs support for non-nerd fonts
     ```
-    yay -S ttf-font-awesome otf-font-awesome ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono --needed
+    paru -S ttf-font-awesome otf-font-awesome ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono --needed
     ```
   - [Bibata-cursor](https://www.bibata.live/studio)
   - Mount HDD
@@ -90,7 +123,7 @@
     ```
   - Secure Boot Setup
     ```
-    yay -S sbctl
+    paru -S sbctl
     ```
     Reboot to firmware setting and clear secure boot key then boot to linux
     ```

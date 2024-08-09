@@ -3,7 +3,7 @@
 ## Package List
 
 ```
-yay -S stow kitty fish git make zoxide fzf ripgrep fd bat eza wl-clipboard yazi \
+paru -S stow kitty fish git make zoxide fzf ripgrep fd bat eza wl-clipboard yazi \
 dragon-drop jq unarchiver lazygit btop ttyper progress --needed
 ```
 
