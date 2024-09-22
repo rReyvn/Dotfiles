@@ -1,5 +1,0 @@
-# /etc/environment
-BROWSER=/usr/bin/zen-browser
-EDITOR=/usr/bin/nvim
-TERMINAL=/usr/bin/kitty
-DOCKER_HOST=unix:///run/user/1000/docker.sock

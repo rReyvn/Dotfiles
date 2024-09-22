@@ -1,0 +1,9 @@
+inter-font
+ttf-jetbrains-mono-nerd
+nerd-fonts-inter
+ttf-ms-win10-auto
+ttf-font-awesome
+otf-font-awesome
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-symbols-mono

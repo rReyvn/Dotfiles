@@ -1,3 +1,0 @@
-# /etc/fstab
-UUID=BAB61B22B61ADEA7                       /mnt/HDD       ntfs-3g  x-gvfs-show,uid=1000,guid=1000,dmask=022,fmask=133,nofail         0       0
-UUID=522AF68F2AF66F7B                       /mnt/win/      ntfs-3g  x-gvfs-show,uid=1000,guid=1000,dmask=022,fmask=133,nofail,noauto  0       0

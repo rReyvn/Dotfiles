@@ -1,2 +1,0 @@
-# /etc/udev/rules.d/99-backlight_clamp.rules
-SUBSYSTEM=="backlight", ENV{ID_BACKLIGHT_CLAMP}="0"
