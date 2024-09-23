@@ -2,7 +2,8 @@ brave-bin
 zen-browser-bin
 obsidian
 vesktop-bin
-visual-studio-code-bin
+code
+code-marketplace
 neovide
 vulkan-radeon
 zed
