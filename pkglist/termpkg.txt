@@ -17,3 +17,4 @@ unarchiver
 lazygit
 btop
 ttyper
+nodejs

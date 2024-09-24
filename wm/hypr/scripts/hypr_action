@@ -23,6 +23,17 @@ take_color_pick() {
   fi
 }
 
+idle_inhibitor_toggle() {
+  if pgrep "hypridle" > /dev/null
+  then
+    pkill hypridle
+    hyprctl notify 1 3000 red Hypridle Inactive
+  else
+    hypridle &
+    hyprctl notify 1 3000 blue Hypridle Active
+  fi
+}
+
 case $1 in
 full_screenshot)
   check_dir_exist
@@ -36,5 +47,9 @@ rectangle_screenshot)
 
 color_pick)
   take_color_pick
+  ;;
+
+idle_toggle)
+  idle_inhibitor_toggle
   ;;
 esac
