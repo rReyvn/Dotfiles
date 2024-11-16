@@ -1,7 +1,7 @@
 brave-bin
 zen-browser-bin
 obsidian
-vesktop-bin
+vesktop
 visual-studio-code-bin
 neovide
 vulkan-radeon

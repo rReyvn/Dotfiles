@@ -18,3 +18,4 @@ lazygit
 btop
 ttyper
 nodejs
+asdf

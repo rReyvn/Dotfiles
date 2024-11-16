@@ -1,6 +1,6 @@
 inter-font
+ttf-ubuntu-nerd
 ttf-jetbrains-mono-nerd
-nerd-fonts-inter
 ttf-ms-win10-auto
 ttf-font-awesome
 otf-font-awesome

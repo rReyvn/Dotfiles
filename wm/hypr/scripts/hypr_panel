@@ -1,0 +1,20 @@
+#!/bin/bash
+
+restart_ags() {
+    echo "Display changed... restarting Hyprpanel."
+    agsv1 -q
+    nohup agsv1 &
+}
+
+current_monitor_count=$(hyprctl monitors | grep "Monitor" | wc -l)
+
+while true; do
+    new_monitor_count=$(hyprctl monitors | grep "Monitor" | wc -l)
+
+    if [[ "$current_monitor_count" != "$new_monitor_count" ]]; then
+        restart_ags
+        current_monitor_count=$new_monitor_count
+    fi
+
+    sleep 2
+done

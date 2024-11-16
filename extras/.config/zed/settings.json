@@ -15,7 +15,7 @@
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "One Dark"
   },
   "cursor_blink": false,
   "relative_line_numbers": true,
