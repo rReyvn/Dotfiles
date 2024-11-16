@@ -8,7 +8,7 @@ hyprsunset
 xdg-desktop-portal-hyprland
 hypr-zoom
 wofi
-gpu-screen-recorder-git
+gpu-screen-recorder
 libva-mesa-driver
 playerctl
 brightnessctl

@@ -4,6 +4,3 @@ obsidian
 vesktop
 visual-studio-code-bin
 neovide
-vulkan-radeon
-zed
-intellij-idea-community-edition
