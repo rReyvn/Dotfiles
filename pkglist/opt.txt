@@ -1,3 +1,4 @@
 zed
 vulkan-radeon
-intellij-idea-community-edition
+jetbrains-toolbox
+distrobox

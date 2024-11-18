@@ -4,5 +4,4 @@ docker-rootless-extras
 docker-compose
 ncdu
 cloudflared
-distrobox
 sbctl
