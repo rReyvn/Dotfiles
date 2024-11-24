@@ -1,10 +1,11 @@
 require "nvchad.mappings"
 
 local map = vim.keymap.set
+local nomap = vim.keymap.del
 
 -- Yank Remap
-map("n", "<leader>ya", ":%y+<CR>", { desc = "[Y]ank [A]ll" })
-map({ "n", "v" }, "<leader>yc", '"+y', { desc = "[Y]ank to system [C]lipboard" })
+map("n", "<leader>ya", ":%y+<CR>", { desc = "Yank All" })
+map({ "n", "v" }, "<leader>yc", '"+y', { desc = "Yank to system Clipboard" })
 map("n", "<leader>yy", '"+Y', { desc = "Yank line to system clipboard" })
 
 -- Paste from system clipboard
@@ -21,6 +22,38 @@ map("n", "<C-b>", "<C-b>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
--- Buffer Movement
--- map("n", "<leader><Tab>", ":bnext<CR>", { desc = "Go to next buffer", silent = true })
--- map("n", "<leader><S-Tab>", ":bprevious<CR>", { desc = "Go to previous buffer", silent = true })
+-- Gitsign
+map("n", "<leader>gh", "<cmd>Gitsign preview_hunk<CR>", { desc = "Gitsign previous hunk" })
+map("n", "]h", "<cmd>Gitsign next_hunk<CR>", { desc = "Gitsign next hunk" })
+map("n", "[h", "<cmd>Gitsign prev_hunk<CR>", { desc = "Gitsign previous hunk" })
+
+-- Toggle
+map("n", "<leader>ttf", "<cmd>TailwindFoldToggle<CR>", { desc = "Toggle tailwind fold" })
+
+-- Custom Telescope Mapping
+map("n", "<leader><space>", "<cmd>Telescope buffers previewer=false<CR>", { desc = "telescope find buffers" })
+
+-- Codeium
+local function neocodeium_map(key, fn)
+  map("i", key, function()
+    require("neocodeium")[fn]()
+  end)
+end
+
+neocodeium_map("<A-f>", "accept")
+neocodeium_map("<A-w>", "accept_word")
+neocodeium_map("<A-a>", "accept_line")
+neocodeium_map("<A-e>", "cycle_or_complete")
+neocodeium_map("<A-c>", "clear")
+
+map("n", "<leader>tc", "<cmd>Neocodeium toggle_enable<CR>", { desc = "Toggle neocodeium" })
+
+map("n", "<A-n>", function()
+  require("neocodeium").cycle_or_complete(-1)
+end)
+
+nomap({ "n", "v" }, "<leader>/")
+nomap("n", "<leader>n")
+nomap("n", "<leader>v")
+nomap("n", "<leader>h")
+nomap("n", "<leader>e")

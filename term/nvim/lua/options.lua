@@ -5,9 +5,10 @@ local g = vim.g
 -- o.cursorlineopt = "both" -- to enable cursorline!
 
 o.clipboard = "" --Set "unnamedplus" to sync with system clipboard
-o.shell = "/usr/bin/fish"
 o.hlsearch = false
 o.incsearch = true
+o.wrap = false
+o.shell = "/usr/bin/fish"
 
 vim.filetype.add {
   pattern = {
@@ -16,5 +17,5 @@ vim.filetype.add {
 }
 
 if g.neovide then
-	o.guifont = "JetBrainsMono Nerd Font:h10"
+  o.guifont = "JetBrainsMono Nerd Font:h10"
 end

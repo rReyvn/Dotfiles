@@ -19,6 +19,9 @@ vim.keymap.set("x", "p", 'p:let @+=@0<CR>:let @"=@0<CR>', { silent = true })
 
 -- VScode Action
 vim.keymap.set({ "n", "v" }, "<leader>ff", "<cmd>lua require('vscode').action('workbench.action.quickOpen')<CR>")
+vim.keymap.set("n", "<Tab>", "<cmd>lua require('vscode').action('workbench.action.nextEditor')<CR>")
+vim.keymap.set("n", "<S-Tab>", "<cmd>lua require('vscode').action('workbench.action.previousEditor')<CR>")
+vim.keymap.set("n", "<leader>x", "<cmd>lua require('vscode').action('workbench.action.closeActiveEditor')<CR>")
 
 -- [ Autocmds ]
 local function augroup(name)

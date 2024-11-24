@@ -1,25 +1,5 @@
 return {
   {
-    "stevearc/conform.nvim",
-    event = "BufWritePre",
-    opts = require "configs.conform",
-  },
-
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    config = function()
-      require "configs.treesitter"
-    end,
-  },
-
-  {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       {
@@ -35,10 +15,12 @@ return {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
       },
-      { "nvim-telescope/telescope-ui-select.nvim" },
-    },
-    opts = {
-      extensions_list = { "fzf", "ui-select" },
+      {
+        "nvim-telescope/telescope-ui-select.nvim",
+      },
+      opts = {
+        extensions_list = { "fzf", "ui-select" },
+      },
     },
   },
 
@@ -61,19 +43,6 @@ return {
         desc = "Open parent directory",
       },
     },
-  },
-
-  {
-    "epwalsh/obsidian.nvim",
-    version = "*",
-    lazy = true,
-    event = {
-      "BufReadPre " .. vim.fn.expand "~" .. "/Dev/Notes/ReyVault/**.md",
-      "BufNewFile " .. vim.fn.expand "~" .. "/Dev/Notes/ReyVault/**.md",
-    },
-    config = function()
-      require "configs.obsidian"
-    end,
   },
 
   {
