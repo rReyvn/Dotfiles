@@ -34,22 +34,13 @@ return {
     },
     event = "VeryLazy",
     cmd = "Oil",
-    keys = {
-      {
-        "-",
-        function()
-          require("oil").open()
-        end,
-        desc = "Open parent directory",
-      },
-    },
   },
 
   {
     "max397574/better-escape.nvim",
     event = "InsertEnter",
     config = function()
-      require "configs.better-escape"
+      require "configs.betterescape"
     end,
   },
 }

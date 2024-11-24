@@ -44,6 +44,6 @@ lspconfig.html.setup {
   filetypes = {
     "html",
     "templ",
-    "blade"
+    "blade",
   },
 }

@@ -6,7 +6,7 @@ require("nvim-treesitter.configs").setup {
     "html",
     "css",
     "php",
-    "blade"
+    "blade",
   },
   highlight = {
     enable = true,
