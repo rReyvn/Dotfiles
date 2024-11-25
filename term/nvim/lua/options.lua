@@ -2,7 +2,6 @@ require "nvchad.options"
 
 local o = vim.o
 local g = vim.g
--- o.cursorlineopt = "both" -- to enable cursorline!
 
 o.clipboard = "" --Set "unnamedplus" to sync with system clipboard
 o.hlsearch = false
