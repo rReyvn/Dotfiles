@@ -14,7 +14,7 @@ playerctl
 brightnessctl
 xorg-xev
 wev
-cliphist
+clipse
 git
 ntfs-3g
 mpv
