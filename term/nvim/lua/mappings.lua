@@ -23,7 +23,7 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
 -- Gitsign
-map("n", "<leader>gh", "<cmd>Gitsign preview_hunk<CR>", { desc = "Gitsign previous hunk" })
+map("n", "<leader>gh", "<cmd>Gitsign preview_hunk<CR>", { desc = "Gitsign preview hunk" })
 map("n", "]h", "<cmd>Gitsign next_hunk<CR>", { desc = "Gitsign next hunk" })
 map("n", "[h", "<cmd>Gitsign prev_hunk<CR>", { desc = "Gitsign previous hunk" })
 
@@ -58,7 +58,6 @@ end)
 
 nomap({ "n", "v" }, "<leader>/")
 nomap("n", "<leader>n")
-nomap("n", "<leader>v")
-nomap("n", "<leader>h")
 nomap("n", "<leader>e")
-nomap("n", "<C-n>")
+nomap("n", "<C-c>")
+nomap("n", "<C-s>")
