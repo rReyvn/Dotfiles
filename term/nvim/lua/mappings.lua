@@ -15,12 +15,12 @@ map({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 map("x", "p", 'p:let @+=@0<CR>:let @"=@0<CR>', { silent = true })
 
 -- Always center scroll
-map("n", "<C-d>", "<C-d>zz")
-map("n", "<C-u>", "<C-u>zz")
-map("n", "<C-f>", "<C-f>zz")
-map("n", "<C-b>", "<C-b>zz")
-map("n", "n", "nzzzv")
-map("n", "N", "Nzzzv")
+-- map("n", "<C-d>", "<C-d>zz")
+-- map("n", "<C-u>", "<C-u>zz")
+-- map("n", "<C-f>", "<C-f>zz")
+-- map("n", "<C-b>", "<C-b>zz")
+-- map("n", "n", "nzzzv")
+-- map("n", "N", "Nzzzv")
 
 -- Gitsign
 map("n", "<leader>gh", "<cmd>Gitsign preview_hunk<CR>", { desc = "Gitsign preview hunk" })
