@@ -40,8 +40,8 @@ return {
     "karb94/neoscroll.nvim",
     event = "BufWinEnter",
     cond = function()
-      if vim.g.neovide then
-        return false
+      if not vim.g.neovide then
+        return true
       end
     end,
     opts = {},

@@ -33,6 +33,10 @@ map("n", "<leader>ttf", "<cmd>TailwindFoldToggle<CR>", { desc = "Toggle tailwind
 -- Custom Telescope Mapping
 map("n", "<leader><space>", "<cmd>Telescope buffers previewer=false<CR>", { desc = "telescope find buffers" })
 
+-- Tabufline (Tab Buffers)
+map("n", "<A-.>", "<cmd>lua require('nvchad.tabufline').move_buf(1)<CR>", { desc = "Move buffer next" })
+map("n", "<A-,>", "<cmd>lua require('nvchad.tabufline').move_buf(-1)<CR>", { desc = "Move buffer previous" })
+
 -- File explorer
 map("n", "<leader>fO", "<cmd>Oil<CR>", { desc = "Open file explorer" })
 map("n", "-", "<cmd>Oil --float<CR>", { desc = "Open floating file explorer" })

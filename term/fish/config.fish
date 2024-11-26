@@ -7,7 +7,8 @@ if status is-interactive
   set -gx BROWSER zen-browser
   
   fish_add_path ~/.local/bin
-  fish_add_path ~/.cargo/bin/
+  fish_add_path ~/.bun/bin
+  fish_add_path ~/.cargo/bin
   
   zoxide init fish | source
   fzf --fish | source
