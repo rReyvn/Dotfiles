@@ -20,6 +20,38 @@ return {
   },
 
   {
+    "mfussenegger/nvim-lint",
+    opts = require "configs.linter",
+  },
+
+  {
+    "echasnovski/mini.comment",
+    event = "VeryLazy",
+    opts = {
+      options = {
+        custom_commentstring = function()
+          return require("ts_context_commentstring.internal").calculate_commentstring() or vim.bo.commentstring
+        end,
+      },
+    },
+  },
+
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    lazy = true,
+    opts = {
+      enable_autocmd = false,
+    },
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    cmd = "TodoTelescope",
+    event = "VeryLazy",
+    opts = {},
+  },
+
+  {
     "monkoose/neocodeium",
     event = "VeryLazy",
     config = function()

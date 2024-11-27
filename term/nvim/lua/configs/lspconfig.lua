@@ -47,3 +47,6 @@ lspconfig.html.setup {
     "blade",
   },
 }
+
+lspconfig.volar.setup {}
+lspconfig.eslint.setup {}

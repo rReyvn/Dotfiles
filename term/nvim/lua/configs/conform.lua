@@ -3,6 +3,8 @@ local options = {
     lua = { "stylua" },
     css = { "prettierd", "prettier", stop_after_firsts = true },
     html = { "prettierd", "prettier", stop_after_firsts = true },
+    vue = { "prettierd", "prettier", stop_after_firsts = true },
+    javascript = { "prettierd", "prettier", stop_after_firsts = true },
     php = { "pint" },
     blade = { "blade-formatter" },
   },
