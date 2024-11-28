@@ -33,15 +33,29 @@ toggle_gamemode() {
           keyword decoration:blur:enabled 0;\
           keyword general:gaps_in 0;\
           keyword general:gaps_out 0;\
-          keyword decoration:rounding 0;"
+          keyword decoration:rounding 0;" --quiet
 
-    hyprctl notify 5 3000 0 "Game mode on"
-
+    notify-send "Hyprland" "Game mode on"
     exit
   fi
 
-  hyprctl notify -1 3000 0 "Game mode off"
-  hyprctl reload
+  hyprctl reload --quiet
+  notify-send "Hyprland" "Game mode off"
+}
+
+toggle_hide_window() {
+  ISWINDOWPINNED=$(hyprctl activewindow | grep 'pinned:' | tail -n 1 | awk '{print $2}')
+
+  if [ "$ISWINDOWPINNED" = 1 ]; then
+    hyprctl dispatch pin
+  fi
+
+  hyprctl --batch "\
+        dispatch togglespecialworkspace magic;\
+        dispatch movetoworkspace +0;\
+        dispatch togglespecialworkspace magic;\
+        dispatch movetoworkspace special:magic;\
+        dispatch togglespecialworkspace magic;" --quiet
 }
 
 case $1 in
@@ -61,5 +75,9 @@ color_pick)
 
 gamemode)
   toggle_gamemode
+  ;;
+
+hide_window)
+  toggle_hide_window
   ;;
 esac
