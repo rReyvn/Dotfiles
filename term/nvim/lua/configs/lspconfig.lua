@@ -50,3 +50,4 @@ lspconfig.html.setup {
 
 lspconfig.volar.setup {}
 lspconfig.eslint.setup {}
+lspconfig.bashls.setup {}

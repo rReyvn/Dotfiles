@@ -7,6 +7,7 @@ local options = {
     javascript = { "prettierd", "prettier", stop_after_firsts = true },
     php = { "pint" },
     blade = { "blade-formatter" },
+    bash = { "shfmt" },
   },
 
   format_on_save = {

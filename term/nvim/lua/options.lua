@@ -8,6 +8,7 @@ o.hlsearch = false
 o.incsearch = true
 o.wrap = false
 o.shell = "/usr/bin/fish"
+o.relativenumber = true
 
 vim.filetype.add {
   pattern = {
