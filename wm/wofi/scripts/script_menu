@@ -1,0 +1,17 @@
+#!/bin/bash
+
+entries="Game Mode\nZoom\nReboot"
+
+selected=$(echo -e "$entries" | wofi --dmenu --cache-file /dev/null | awk '{gsub(/ /, ""); print tolower($0)}')
+
+case $selected in
+gamemode)
+  /bin/bash ~/.config/hypr/scripts/hypr_action gamemode
+  ;;
+zoom)
+  hypr-zoom -duration=600 -steps=150 -easing=OutBack -easingOut=InBack -interp=Linear -target=2.8
+  ;;
+reboot)
+  exec systemctl reboot
+  ;;
+esac
