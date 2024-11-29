@@ -1,8 +1,8 @@
 #!/bin/bash
 
-entries="Game Mode\nZoom\nReboot"
+entries="Game Mode\nZoom\nFull Screenshot"
 
-selected=$(echo -e "$entries" | wofi --dmenu --cache-file /dev/null | awk '{gsub(/ /, ""); print tolower($0)}')
+selected=$(echo -e "$entries" | (pidof wofi || wofi --dmenu --prompt "Pick Action" --cache-file /dev/null) | awk '{gsub(/ /, ""); print tolower($0)}')
 
 case $selected in
 gamemode)
@@ -11,7 +11,7 @@ gamemode)
 zoom)
   hypr-zoom -duration=600 -steps=150 -easing=OutBack -easingOut=InBack -interp=Linear -target=2.8
   ;;
-reboot)
-  exec systemctl reboot
+fullscreenshot)
+  /bin/bash ~/.config/hypr/scripts/hypr_action full_screenshot
   ;;
 esac
