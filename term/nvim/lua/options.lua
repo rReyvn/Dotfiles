@@ -9,6 +9,8 @@ o.incsearch = true
 o.wrap = false
 o.shell = "/usr/bin/fish"
 o.relativenumber = true
+o.scrolloff = 10
+o.termguicolors = true
 
 vim.filetype.add {
   pattern = {

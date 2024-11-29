@@ -42,7 +42,13 @@ return {
     event = "VeryLazy",
     config = function()
       local neocodeium = require "neocodeium"
-      neocodeium.setup()
+      neocodeium.setup {
+        filetypes = {
+          oil = false,
+          TelescopePrompt = false,
+          ["dap-repl"] = false,
+        },
+      }
     end,
   },
 
