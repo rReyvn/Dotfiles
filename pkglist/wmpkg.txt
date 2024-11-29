@@ -22,6 +22,8 @@ yt-dlp
 nwg-look
 adw-gtk-theme
 nautilus
+gvfs
+gvfs-mtp
 imv
 file-roller
 gnome-keyring
