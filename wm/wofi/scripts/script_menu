@@ -1,6 +1,6 @@
 #!/bin/bash
 
-entries="Game Mode\nZoom\nFull Screenshot\nRestart Hyprpanel"
+entries="Game Mode\nZoom\nFull Screenshot\nRestart Hyprpanel\nLock Screen"
 
 selected=$(echo -e "$entries" | (pidof wofi || wofi --dmenu --prompt "Pick Action" --cache-file /dev/null) | awk '{gsub(/ /, ""); print tolower($0)}')
 
@@ -16,5 +16,8 @@ fullscreenshot)
   ;;
 restarthyprpanel)
   /bin/bash ~/.config/hypr/scripts/hypr_panel
+  ;;
+lockscreen)
+  hyprlock >/dev/null
   ;;
 esac
