@@ -2,7 +2,7 @@
 
 restart_ags() {
   agsv1 -q
-  nohup agsv1 &
+  hyprctl dispatch exec agsv1 --quiet
 }
 
 restart_ags
