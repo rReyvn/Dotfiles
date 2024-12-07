@@ -29,7 +29,6 @@ file-roller
 gnome-keyring
 polkit-gnome
 gnome-tweaks
-gnome-disk-utility
 papirus-icon-theme
 gnome-calculator
 zathura

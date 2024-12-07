@@ -19,3 +19,4 @@ btop
 ttyper
 nodejs
 asdf
+tokei
