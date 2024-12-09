@@ -36,7 +36,7 @@ M.nvdash = {
     { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
     { txt = "  Settings", keys = "st", cmd = ":Telescope find_files cwd=/home/reyvn/.config/nvim/" },
 
-    { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
+    { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
 
     {
       txt = function()
@@ -48,7 +48,7 @@ M.nvdash = {
       no_gap = true,
     },
 
-    { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
+    -- { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
   },
 }
 

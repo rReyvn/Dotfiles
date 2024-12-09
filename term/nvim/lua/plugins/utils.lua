@@ -26,14 +26,13 @@ return {
 
   {
     "stevearc/oil.nvim",
+    cmd = "Oil",
     opts = {
       delete_to_trash = true,
       view_options = {
         show_hidden = true,
       },
     },
-    event = "VeryLazy",
-    cmd = "Oil",
   },
 
   {

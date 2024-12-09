@@ -100,6 +100,38 @@ If everything done, reboot to firmware setting again and turn secure boot on the
 quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3
 ```
 
+## Remember bluetooth state after reboot
+- Systemd startup script (create file /etc/systemd/system/bluetooth-state-start.service)
+```
+[Unit]
+Description=Check and Manage Bluetooth on Startup
+
+[Service]
+Type=oneshot
+ExecStart=$HOME/.config/hypr/scripts/bluetooth_state
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+- Systemd shutdown script (create file /etc/systemd/system/bluetooth-state-stop.service)
+```
+[Unit]
+Description=Check and Manage Bluetooth on Startup
+
+[Service]
+Type=oneshot
+ExecStart=$HOME/.config/hypr/scripts/bluetooth_state
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+- Enable service
+```
+sudo systemctl enable bluetooth-state-start && sudo systemctl enable bluetooth-state-stop
+```
+
 ## Set default file manager to nautilus
 ```
 xdg-mime default org.gnome.Nautilus.desktop inode/directory

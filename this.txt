@@ -1,0 +1,11 @@
+[Unit]
+Description=Check and Manage Bluetooth on Startup
+
+[Service]
+Type=oneshot
+ExecStart=$HOME/.config/hypr/scripts/bluetooth_state
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
