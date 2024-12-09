@@ -101,27 +101,27 @@ quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3
 ```
 
 ## Remember bluetooth state after reboot
-- Systemd startup script (create file /etc/systemd/system/bluetooth-state-start.service)
+- Create startup script (/etc/systemd/system/bluetooth-state-start.service), don't forget to change directory (See in script)
 ```
 [Unit]
 Description=Check and Manage Bluetooth on Startup
 
 [Service]
 Type=oneshot
-ExecStart=$HOME/.config/hypr/scripts/bluetooth_state
+ExecStart=<CHANGE THIS TO USER DIRECTORY>/.config/hypr/scripts/bluetooth_state
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
 ```
-- Systemd shutdown script (create file /etc/systemd/system/bluetooth-state-stop.service)
+- Create shutdown script (/etc/systemd/system/bluetooth-state-stop.service), don't forget to change directory (See in script)
 ```
 [Unit]
 Description=Check and Manage Bluetooth on Startup
 
 [Service]
 Type=oneshot
-ExecStart=$HOME/.config/hypr/scripts/bluetooth_state
+ExecStart=<CHANGE THIS TO USER DIRECTORY>/.config/hypr/scripts/bluetooth_state
 RemainAfterExit=yes
 
 [Install]
