@@ -19,7 +19,7 @@ return {
 
   {
     "lewis6991/satellite.nvim",
-    event = "BufWinEnter",
+    event = { "BufReadPost", "BufNewFile" },
     opts = { excluded_filetypes = { "prompt", "TelescopePrompt", "noice", "notify", "neo-tree", "NvimTree" } },
   },
 
@@ -38,7 +38,7 @@ return {
 
   {
     "karb94/neoscroll.nvim",
-    event = "BufWinEnter",
+    event = { "BufReadPost", "BufNewFile" },
     cond = function()
       if not vim.g.neovide then
         return true

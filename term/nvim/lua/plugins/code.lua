@@ -29,19 +29,20 @@ return {
 
   {
     "folke/ts-comments.nvim",
-    event = "VeryLazy",
+    event = { "BufReadPost", "BufNewFile" },
     opts = {},
   },
 
   {
     "folke/todo-comments.nvim",
+    event = { "BufReadPost", "BufNewFile" },
     cmd = "TodoTelescope",
-    event = "VeryLazy",
     opts = {},
   },
 
   {
     "razak17/tailwind-fold.nvim",
+    event = { "BufReadPost", "BufNewFile" },
     ft = { "html", "svelte", "astro", "vue", "typescriptreact", "php", "blade" },
     opts = {
       enabled = false,
