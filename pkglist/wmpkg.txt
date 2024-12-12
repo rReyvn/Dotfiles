@@ -59,3 +59,4 @@ gnome-bluetooth-3.0
 power-profiles-daemon
 bun-bin
 aylurs-gtk-shell-git
+flite

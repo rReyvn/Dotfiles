@@ -8,6 +8,7 @@ local options = {
     php = { "pint" },
     blade = { "blade-formatter" },
     bash = { "shfmt" },
+    python = { "black" },
   },
 
   format_on_save = {

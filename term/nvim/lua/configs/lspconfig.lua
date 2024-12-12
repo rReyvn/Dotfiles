@@ -12,6 +12,7 @@ local servers = {
   "bashls",
   "volar",
   "eslint",
+  "pyright",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
@@ -60,3 +61,4 @@ lspconfig.html.setup {
 lspconfig.volar.setup {}
 lspconfig.eslint.setup {}
 lspconfig.bashls.setup {}
+lspconfig.pyright.setup {}
