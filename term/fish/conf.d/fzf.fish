@@ -1,3 +1,5 @@
+fzf --fish | source
+  
 set -U FZF_DEFAULT_OPTS "\
   --height 60%\
   --border"
