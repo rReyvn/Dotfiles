@@ -72,3 +72,6 @@
     `paru -S - < fonts.txt --needed`
     
   - [Bibata-cursor](https://www.bibata.live/studio)
+  - Hide application from showing up on application runner
+    Put `NoDisplay=true` on desktop entries file & update desktop database using `update-desktop-database ~/.local/share/applications/` 
+    or `sudo update-desktop-database /usr/share/applications/`
