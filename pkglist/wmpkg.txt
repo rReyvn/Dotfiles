@@ -60,3 +60,4 @@ power-profiles-daemon
 bun-bin
 aylurs-gtk-shell-git
 flite
+vulkan-radeon

@@ -11,12 +11,9 @@ bat
 eza
 wl-clipboard
 yazi
-dragon-drop
 jq
 unarchiver
 lazygit
 btop
 ttyper
-nodejs
-asdf
 tokei

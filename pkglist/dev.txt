@@ -1,0 +1,7 @@
+nodejs
+asdf-vm
+docker
+docker-rootless-extras
+docker-compose
+visual-studio-code-bin
+jetbrains-toolbox

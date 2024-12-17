@@ -2,5 +2,4 @@ brave-bin
 zen-browser-bin
 obsidian
 vesktop
-visual-studio-code-bin
 neovide
