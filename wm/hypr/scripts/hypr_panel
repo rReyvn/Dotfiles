@@ -1,8 +1,15 @@
 #!/bin/bash
 
 restart_ags() {
-  agsv1 -q
-  hyprctl dispatch exec agsv1 --quiet
+  hyprpanel -q
+  hyprctl dispatch exec hyprpanel --quiet
 }
 
-restart_ags
+case $1 in
+restart)
+  restart_ags
+  ;;
+clear-notif)
+  hyprpanel clearNotifications
+  ;;
+esac

@@ -17,3 +17,5 @@ lazygit
 btop
 ttyper
 tokei
+cmus
+yt-dlp

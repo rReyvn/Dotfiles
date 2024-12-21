@@ -6,6 +6,7 @@ hyprlock
 hyprpicker
 hyprsunset
 xdg-desktop-portal-hyprland
+hypr-qtutils-git
 hypr-zoom
 wofi
 gpu-screen-recorder
@@ -18,7 +19,6 @@ clipse-bin
 git
 ntfs-3g
 mpv
-yt-dlp
 nwg-look
 adw-gtk-theme
 nautilus
@@ -50,14 +50,12 @@ bluez
 bluez-utils
 grimblast-git
 networkmanager
-matugen-bin
 swww
 btop
 wl-clipboard
 dart-sass
 gnome-bluetooth-3.0
 power-profiles-daemon
-bun-bin
-aylurs-gtk-shell-git
+ags-hyprpanel-git
 flite
 vulkan-radeon

@@ -5,3 +5,4 @@ docker-rootless-extras
 docker-compose
 visual-studio-code-bin
 jetbrains-toolbox
+bun-bin
