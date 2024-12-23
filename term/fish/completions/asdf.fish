@@ -1,0 +1,1 @@
+/home/reyvn/.asdf/completions/asdf.fish

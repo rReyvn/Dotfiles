@@ -2,6 +2,4 @@
 
 ## Package List
 
-```
-paru -S - < termpkg.txt --needed
-```
+` paru -S - < termpkg.txt --needed`
