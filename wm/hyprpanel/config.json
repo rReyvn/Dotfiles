@@ -378,7 +378,7 @@
   "menus.dashboard.directories.right.directory2.command": "bash -c \"nautilus $HOME/Pictures/\"",
   "menus.dashboard.directories.right.directory3.label": "󱂵 Home",
   "menus.dashboard.directories.right.directory3.command": "bash -c \"nautilus $HOME/\"",
-  "theme.bar.menus.menu.dashboard.profile.size": "8.5em",
+  "theme.bar.menus.menu.dashboard.profile.size": "9em",
   "menus.clock.weather.unit": "metric",
   "theme.bar.buttons.modules.weather.enableBorder": false,
   "bar.customModules.storage.label": true,
@@ -539,5 +539,7 @@
   "bar.battery.label": false,
   "bar.battery.rightClick": "menu:powerdropdown",
   "menus.dashboard.powermenu.avatar.name": "Reyvn",
-  "bar.notifications.rightClick": "menu:media"
+  "bar.notifications.rightClick": "menu:media",
+  "notifications.displayedTotal": 5,
+  "menus.dashboard.shortcuts.enabled": true
 }
