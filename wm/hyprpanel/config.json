@@ -393,15 +393,8 @@
   "bar.windowtitle.custom_title": true,
   "bar.layouts": {
     "0": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "submap",
-        "hypridle"
-      ],
-      "middle": [
-        "windowtitle"
-      ],
+      "left": ["dashboard", "workspaces", "submap", "hypridle"],
+      "middle": ["windowtitle"],
       "right": [
         "network",
         "bluetooth",
@@ -414,15 +407,8 @@
       ]
     },
     "1": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "submap",
-        "hypridle"
-      ],
-      "middle": [
-        "windowtitle"
-      ],
+      "left": ["dashboard", "workspaces", "submap", "hypridle"],
+      "middle": ["windowtitle"],
       "right": [
         "network",
         "bluetooth",
@@ -435,15 +421,8 @@
       ]
     },
     "2": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "submap",
-        "hypridle"
-      ],
-      "middle": [
-        "windowtitle"
-      ],
+      "left": ["dashboard", "workspaces", "submap", "hypridle"],
+      "middle": ["windowtitle"],
       "right": [
         "network",
         "bluetooth",
@@ -472,8 +451,8 @@
   "menus.dashboard.shortcuts.left.shortcut2.icon": "󰨞",
   "menus.dashboard.shortcuts.left.shortcut2.tooltip": "Visual Studio Code",
   "menus.dashboard.shortcuts.left.shortcut3.tooltip": "Search Apps",
-  "menus.dashboard.shortcuts.left.shortcut3.command": "wofi",
-  "menus.dashboard.shortcuts.left.shortcut4.command": "bash -c \"~/.config/wofi/scripts/script_menu\"",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "fuzzel",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "bash -c \"~/.config/fuzzel/scripts/script_menu\"",
   "theme.bar.menus.menu.bluetooth.scaling": 100,
   "theme.bar.menus.menu.dashboard.scaling": 80,
   "theme.osd.scaling": 90,

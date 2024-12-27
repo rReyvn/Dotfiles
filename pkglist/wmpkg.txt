@@ -8,7 +8,7 @@ hyprsunset
 xdg-desktop-portal-hyprland
 hypr-qtutils-git
 hypr-zoom
-wofi
+fuzzel
 gpu-screen-recorder
 libva-mesa-driver
 playerctl
