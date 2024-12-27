@@ -1,6 +1,6 @@
 #!/bin/bash
 
-entries="Game Mode\nZoom\nFull Screenshot\nRestart Hyprpanel\nLock Screen\nClear Notification"
+entries="Game Mode\nZoom\nFull Screenshot\nRestart Hyprpanel\nLock Screen\nClear Notification\nTyping Test"
 
 selected=$(echo -e "$entries" | (pidof wofi || wofi --dmenu --prompt "Pick Action" --cache-file /dev/null) | awk '{gsub(/ /, ""); print tolower($0)}')
 
@@ -22,5 +22,8 @@ clearnotification)
   ;;
 lockscreen)
   hyprlock >/dev/null
+  ;;
+typingtest)
+  kitty -o font_size=20 -e smassh
   ;;
 esac
