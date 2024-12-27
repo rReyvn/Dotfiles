@@ -8,3 +8,6 @@ https://asdf-vm.com/guide/getting-started.html
 
 ## Bun
 https://bun.sh/docs/installation#installing
+
+## Rust
+https://rustup.rs/
