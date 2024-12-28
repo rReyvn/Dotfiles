@@ -2,7 +2,7 @@
 
 entries="Game Mode\nZoom\nFull Screenshot\nRestart Hyprpanel\nLock Screen\nClear Notification\nTyping Test"
 
-selected=$(echo -e "$entries" | (pidof fuzzel || fuzzel --dmenu --cache /dev/null) | awk '{gsub(/ /, ""); print tolower($0)}')
+selected=$(echo -e "$entries" | (pidof fuzzel || fuzzel --dmenu --no-icons --cache /dev/null) | awk '{gsub(/ /, ""); print tolower($0)}')
 
 case $selected in
 gamemode)

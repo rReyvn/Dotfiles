@@ -30,7 +30,7 @@ gnome-keyring
 polkit-gnome
 gnome-tweaks
 papirus-icon-theme
-gnome-calculator
+qalculate-gtk
 zathura
 zathura-pdf-poppler
 xdg-desktop-portal-gtk

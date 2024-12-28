@@ -393,8 +393,15 @@
   "bar.windowtitle.custom_title": true,
   "bar.layouts": {
     "0": {
-      "left": ["dashboard", "workspaces", "submap", "hypridle"],
-      "middle": ["windowtitle"],
+      "left": [
+        "dashboard",
+        "workspaces",
+        "submap",
+        "hypridle"
+      ],
+      "middle": [
+        "windowtitle"
+      ],
       "right": [
         "network",
         "bluetooth",
@@ -407,8 +414,15 @@
       ]
     },
     "1": {
-      "left": ["dashboard", "workspaces", "submap", "hypridle"],
-      "middle": ["windowtitle"],
+      "left": [
+        "dashboard",
+        "workspaces",
+        "submap",
+        "hypridle"
+      ],
+      "middle": [
+        "windowtitle"
+      ],
       "right": [
         "network",
         "bluetooth",
@@ -421,8 +435,15 @@
       ]
     },
     "2": {
-      "left": ["dashboard", "workspaces", "submap", "hypridle"],
-      "middle": ["windowtitle"],
+      "left": [
+        "dashboard",
+        "workspaces",
+        "submap",
+        "hypridle"
+      ],
+      "middle": [
+        "windowtitle"
+      ],
       "right": [
         "network",
         "bluetooth",
@@ -458,7 +479,7 @@
   "theme.osd.scaling": 90,
   "theme.notification.scaling": 85,
   "theme.bar.menus.menu.notifications.scaling": 90,
-  "theme.bar.menus.menu.clock.scaling": 80,
+  "theme.bar.menus.menu.clock.scaling": 85,
   "theme.bar.menus.menu.battery.scaling": 95,
   "theme.bar.menus.menu.network.scaling": 100,
   "theme.bar.menus.menu.volume.scaling": 90,
