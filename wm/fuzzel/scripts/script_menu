@@ -15,10 +15,10 @@ fullscreenshot)
   /bin/bash ~/.config/hypr/scripts/hypr_action full_screenshot
   ;;
 restarthyprpanel)
-  /bin/bash ~/.config/hypr/scripts/hypr_panel restart
+  hyprpanel restart
   ;;
 clearnotification)
-  /bin/bash ~/.config/hypr/scripts/hypr_panel clear-notif
+  hyprpanel clearNotification
   ;;
 lockscreen)
   hyprlock >/dev/null
