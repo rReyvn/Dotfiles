@@ -21,7 +21,7 @@ ntfs-3g
 mpv
 nwg-look
 adw-gtk-theme
-nautilus
+pcmanfm-gtk3
 gvfs
 gvfs-mtp
 imv

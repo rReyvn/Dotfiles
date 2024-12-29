@@ -100,7 +100,7 @@ If everything done, reboot to firmware setting again and turn secure boot on the
 quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3
 ```
 
-## Set default file manager to nautilus
+## Set default file manager to pcmanfm
 ```
-xdg-mime default org.gnome.Nautilus.desktop inode/directory
+xdg-mime default pcmanfm.desktop inode/directory
 ```
