@@ -2,4 +2,3 @@ brave-bin
 zen-browser-bin
 obsidian
 vesktop
-neovide

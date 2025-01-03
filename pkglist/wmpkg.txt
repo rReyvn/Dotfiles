@@ -28,7 +28,6 @@ imv
 file-roller
 gnome-keyring
 polkit-gnome
-gnome-tweaks
 papirus-icon-theme
 qalculate-gtk
 zathura
