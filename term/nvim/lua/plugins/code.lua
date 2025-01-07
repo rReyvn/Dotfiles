@@ -43,6 +43,7 @@ return {
   {
     "razak17/tailwind-fold.nvim",
     event = { "BufReadPost", "BufNewFile" },
+    cmd = "TailwindFoldToggle",
     ft = { "html", "svelte", "astro", "vue", "typescriptreact", "php", "blade" },
     opts = {
       enabled = false,

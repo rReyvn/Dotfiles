@@ -24,7 +24,6 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- configuring single server, example: typescript
 lspconfig.ts_ls.setup {
   on_attach = nvlsp.on_attach,
   on_init = nvlsp.on_init,
@@ -33,26 +32,12 @@ lspconfig.ts_ls.setup {
 
 lspconfig.emmet_ls.setup {
   filetypes = {
-    "css",
-    "eruby",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "less",
-    "sass",
-    "scss",
-    "svelte",
-    "pug",
-    "typescriptreact",
-    "vue",
     "blade",
   },
 }
 
 lspconfig.html.setup {
   filetypes = {
-    "html",
-    "templ",
     "blade",
   },
 }
