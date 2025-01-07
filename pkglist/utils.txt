@@ -1,4 +1,5 @@
 syncthing
+trash-cli
 ncdu
 cloudflared
 sbctl

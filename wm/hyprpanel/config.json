@@ -500,7 +500,7 @@
   "theme.bar.menus.popover.scaling": 80,
   "menus.dashboard.stats.enabled": false,
   "theme.bar.buttons.workspaces.smartHighlight": false,
-  "bar.workspaces.showAllActive": true,
+  "bar.workspaces.showAllActive": false,
   "theme.bar.border.location": "none",
   "bar.launcher.autoDetectIcon": false,
   "menus.transition": "crossfade",
@@ -553,5 +553,6 @@
   "menus.dashboard.shortcuts.left.shortcut3.icon": "",
   "bar.battery.hideLabelWhenFull": false,
   "menus.clock.weather.enabled": false,
-  "menus.clock.time.hideSeconds": true
+  "menus.clock.time.hideSeconds": true,
+  "bar.workspaces.ignored": "-98"
 }

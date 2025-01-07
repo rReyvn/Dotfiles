@@ -1,14 +1,10 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
-. "$HOME/.cargo/env"
-. "$HOME/.asdf/plugins/golang/set-env.bash"
+. ~/.asdf/asdf.sh
+. ~/.asdf/completions/asdf.bash
+. ~/.cargo/env
+. ~/.asdf/plugins/golang/set-env.bash
 
 alias ls='ls --color=auto'
 alias ll='ls -lah --color=auto'
