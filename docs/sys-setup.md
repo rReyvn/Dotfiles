@@ -100,7 +100,7 @@ If everything done, reboot to firmware setting again and turn secure boot on the
 quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3
 ```
 
-## Set default file manager to pcmanfm
+## Set default file manager to thunar
 ```
-xdg-mime default pcmanfm.desktop inode/directory
+xdg-mime default thunar.desktop inode/directory
 ```

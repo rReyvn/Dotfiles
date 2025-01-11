@@ -21,11 +21,15 @@ ntfs-3g
 mpv
 nwg-look
 adw-gtk-theme
-pcmanfm-gtk3
+thunar
+thunar-volman
+thunar-archive-plugin
+catfish
+tumbler
 gvfs
 gvfs-mtp
 imv
-file-roller
+engrampa
 gnome-keyring
 polkit-gnome
 papirus-icon-theme
