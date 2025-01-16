@@ -24,7 +24,7 @@
 > /etc/environment
 ```
 # Adjust this based on apps installed
-BROWSER=/usr/bin/brave
+BROWSER=/usr/bin/zen-browser
 EDITOR=/usr/bin/nvim
 TERMINAL=/usr/bin/kitty
 

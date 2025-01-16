@@ -54,4 +54,11 @@ return {
       require("kitty-scrollback").setup()
     end,
   },
+
+  {
+    "nvzone/typr",
+    cmd = "TyprStats",
+    dependencies = "nvzone/volt",
+    opts = {},
+  },
 }
