@@ -16,6 +16,4 @@ set -U FZF_CTRL_T_OPTS " \
   --color=always {}' \
   "
 
-set -U FZF_CTRL_R_OPTS " \
-  --preview 'echo {}' \
-  "
+set -U FZF_CTRL_R_OPTS ""
