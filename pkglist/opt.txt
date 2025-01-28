@@ -2,3 +2,4 @@ dragon-drop
 zed
 distrobox
 neovide
+ttyper

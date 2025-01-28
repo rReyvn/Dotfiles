@@ -30,10 +30,7 @@ toggle_gamemode() {
     hyprctl --batch "\
           keyword animations:enabled 0;\
           keyword decoration:shadow:enabled 0;\
-          keyword decoration:blur:enabled 0;\
-          keyword general:gaps_in 0;\
-          keyword general:gaps_out 0;\
-          keyword decoration:rounding 0;" --quiet
+          keyword decoration:blur:enabled 0;" --quiet
 
     notify-send "Hyprland" "Game mode on"
     exit
