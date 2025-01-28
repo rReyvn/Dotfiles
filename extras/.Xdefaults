@@ -1,35 +1,35 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Gruvbox Material Dark
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*background: #1d2021
-! medium
-! *background: #282828
-! soft
-! *background: #32302f
+! special
+*.foreground:   #edeff0
+*.background:   #0c0e0f
 
-*foreground: #d4be98
+! black
+*.color0:       #232526
+*.color8:       #2c2e2f
 
-! Black + DarkGrey
-*color0:  #32302f
-*color8:  #32302f
-! DarkRed + Red
-*color1:  #ea6962
-*color9:  #ea6962
-! DarkGreen + Green
-*color2:  #a9b665
-*color10: #a9b665
-! DarkYellow + Yellow
-*color3:  #e78a4e
-*color11: #e78a4e
-! DarkBlue + Blue
-*color4:  #7daea3
-*color12: #7daea3
-! DarkMagenta + Magenta
-*color5:  #d3869b
-*color13: #d3869b
-! DarkCyan + Cyan
-*color6:  #89b482
-*color14: #89b482
-! LightGrey + White
-*color7:  #d4be98
-*color15: #d4be98
+! red
+*.color1:       #df5b61
+*.color9:       #e8646a
+
+! green
+*.color2:       #78b892
+*.color10:      #81c19b
+
+! yellow
+*.color3:       #de8f78
+*.color11:      #e79881
+
+! blue
+*.color4:       #6791c9
+*.color12:      #709ad2
+
+! magenta
+*.color5:       #bc83e3
+*.color13:      #c58cec
+
+! cyan
+*.color6:       #67afc1
+*.color14:      #70b8ca
+
+! white
+*color7:        #e4e6e7
+*color15:       #f2f4f5

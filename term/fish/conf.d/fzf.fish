@@ -2,7 +2,7 @@ fzf --fish | source
   
 set -U FZF_DEFAULT_OPTS "\
   --height 60%\
-  --color=pointer:#5f87af\
+  --color=pointer:#6791C9\
   --border"
 
 set -U FZF_ALT_C_COMMAND "fd -t d . \$dir"

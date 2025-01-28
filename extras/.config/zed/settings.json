@@ -15,7 +15,7 @@
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light",
-    "dark": "One Dark"
+    "dark": "JetBrains New Dark"
   },
   "cursor_blink": false,
   "relative_line_numbers": true,
