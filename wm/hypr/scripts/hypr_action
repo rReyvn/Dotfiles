@@ -23,21 +23,21 @@ take_color_pick() {
   fi
 }
 
-toggle_gamemode() {
-  HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
+toggle_desktop_effect() {
+  HYPRDESKTOPEFFECT=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
 
-  if [ "$HYPRGAMEMODE" = 1 ]; then
+  if [ "$HYPRDESKTOPEFFECT" = 1 ]; then
     hyprctl --batch "\
           keyword animations:enabled 0;\
           keyword decoration:shadow:enabled 0;\
           keyword decoration:blur:enabled 0;" --quiet
 
-    notify-send "Hyprland" "Game mode on"
+    notify-send "Hyprland" "Desktop Effect OFF"
     exit
   fi
 
   hyprctl reload --quiet
-  notify-send "Hyprland" "Game mode off"
+  notify-send "Hyprland" "Desktop Effect ON"
 }
 
 toggle_hide_window() {
@@ -70,8 +70,8 @@ color_pick)
   take_color_pick
   ;;
 
-gamemode)
-  toggle_gamemode
+desktop_effect)
+  toggle_desktop_effect
   ;;
 
 hide_window)
