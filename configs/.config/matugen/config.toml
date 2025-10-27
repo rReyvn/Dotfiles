@@ -1,0 +1,34 @@
+[config.wallpaper]
+command = "plasma-apply-wallpaperimage" 
+set = false
+
+[templates.vicinae]
+input_path = './templates/vicinae.toml'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
+post_hook = 'vicinae theme set matugen'
+
+[templates.kitty]
+input_path = './templates/kitty.toml'
+output_path = '~/.config/kitty/colors/material_you.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+[templates.vesktop]
+input_path = './templates/vesktop.toml'
+output_path = '~/.config/vesktop/themes/material_you.css'
+
+[templates.yazi]
+input_path = './templates/yazi.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.btop]
+input_path = './templates/btop.toml'
+output_path = '~/.config/btop/themes/matugen.theme'
+
+[templates.gtk3]
+input_path = './templates/gtk.toml'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = './templates/gtk.toml'
+output_path = '~/.config/gtk-4.0/colors.css'

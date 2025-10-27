@@ -62,16 +62,6 @@ pipx install bt-dualboot
 sudo ~/.local/bin/bt-dualboot --sync-all --backup
 ```
 
-# Windows doesn't appear on boot menu list
-```
-sudo mkdir /mnt/linux-efi /mnt/windows-efi
-sudo fdisk -l
-sudo mount /dev/<Windows-EFI-DEVICE-NAME> /mnt/window-sefi/
-sudo mount /dev/<Linux-EFI-DEVICE-NAME> /mnt/linux-efi/
-sudo cp -r /mnt/windows-efi/EFI/Microsoft /mnt/linux-efi/EFI/
-sudo umount /mnt/linux-efi /mnt/windows-efi
-```
-
 # External storage mount option
 ```
 LABEL=Linux-HDD                             /mnt/linux-hdd   ext4    defaults,nofail,x-gvfs-show,x-gvfs-name=Linux-HDD                                          0 0 
@@ -105,46 +95,3 @@ quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3
 ```
 Regenerate all systemd-boot entries
 `sudo sdboot-manage gen`
-
-# Plasma Google Drive Fix Workaround
-`sudo -e /usr/share/accounts/providers/kde/google.provider`
-Replace content with
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<provider id="google">
-  <name>Google</name>
-  
-  <description>GNOME-ID, Google Drive and YouTube</description>
-  <icon>im-google</icon>
-  <translations>kaccounts-providers</translations>
-  <domains>.*google\.com</domains>
-
-  <template>
-    <group name="auth">
-      <setting name="method">oauth2</setting>
-      <setting name="mechanism">web_server</setting>
-      <group name="oauth2">
-        <group name="web_server">
-          <setting name="Host">accounts.google.com</setting>
-          <setting name="AuthPath">o/oauth2/auth?access_type=offline</setting>
-          <setting name="TokenPath">o/oauth2/token</setting>
-          <setting name="RedirectUri">http://localhost/oauth2callback</setting>
-          
-          <setting name="ResponseType">code</setting>
-          <setting type="as" name="Scope">[
-              'https://www.googleapis.com/auth/userinfo.email',
-              'https://www.googleapis.com/auth/userinfo.profile',
-              'https://www.googleapis.com/auth/calendar',
-              'https://www.googleapis.com/auth/tasks',
-              'https://www.googleapis.com/auth/drive'
-          ]</setting>
-          <setting type="as" name="AllowedSchemes">['https']</setting>
-          <setting name="ClientId">44438659992-7kgjeitenc16ssihbtdjbgguch7ju55s.apps.googleusercontent.com</setting>
-          <setting name="ClientSecret">-gMLuQyDiI0XrQS_vx_mhuYF</setting>
-          <setting type="b" name="ForceClientAuthViaRequestBody">true</setting>
-        </group>
-      </group>
-    </group>
-  </template>
-</provider>
-```

@@ -43,12 +43,6 @@ return {
   },
 
   {
-    "lewis6991/satellite.nvim",
-    event = { "BufReadPost", "BufNewFile" },
-    opts = { excluded_filetypes = { "prompt", "TelescopePrompt", "noice", "notify", "neo-tree", "NvimTree" } },
-  },
-
-  {
     "karb94/neoscroll.nvim",
     event = { "BufReadPost", "BufNewFile" },
     cond = function()
@@ -80,17 +74,6 @@ return {
       },
       opts = {
         extensions_list = { "fzf", "ui-select" },
-      },
-    },
-  },
-
-  {
-    "stevearc/oil.nvim",
-    cmd = "Oil",
-    opts = {
-      delete_to_trash = true,
-      view_options = {
-        show_hidden = true,
       },
     },
   },

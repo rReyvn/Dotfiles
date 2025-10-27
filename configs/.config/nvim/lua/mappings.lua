@@ -18,10 +18,6 @@ map("n", "<leader><space>", "<cmd>Telescope buffers previewer=false<CR>", { desc
 map("n", "<A-.>", "<cmd>lua require('nvchad.tabufline').move_buf(1)<CR>", { desc = "Move buffer next" })
 map("n", "<A-,>", "<cmd>lua require('nvchad.tabufline').move_buf(-1)<CR>", { desc = "Move buffer previous" })
 
--- File explorer
-map("n", "<leader>fO", "<cmd>Oil<CR>", { desc = "Open file explorer" })
-map("n", "-", "<cmd>Oil --float<CR>", { desc = "Open floating file explorer" })
-
 nomap({ "n", "v" }, "<leader>/")
 nomap("n", "<leader>n")
 nomap("n", "<leader>e")

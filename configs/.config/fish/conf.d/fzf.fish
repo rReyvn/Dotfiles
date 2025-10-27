@@ -3,7 +3,7 @@ if type -q fzf
 
     set -U FZF_DEFAULT_OPTS "\
     --height 60%\
-    --color=pointer:#6791C9\
+    --color=prompt:4,pointer:4\
     --border"
 
     set -U FZF_ALT_C_COMMAND "fd -t d . \$dir"
@@ -27,7 +27,7 @@ if type -q fzf
         set -l fzf_cmd "fd -t d -H . \$dir"
 
         set -l selection (eval $fzf_cmd | fzf --height 80% \
-      --color=pointer:#6791C9 \
+      --color=pointer:4 \
       --layout=reverse --border \
       --prompt '󰙁 Directory ➤ ' \
       --preview 'eza -aT --sort=modified --level=3 --color=always --git-ignore {}')

@@ -27,8 +27,6 @@ rsync
 sshfs
 tealdeer
 rclone
-inotify-tools
-firewalld
+ufw
 scrcpy
-keychain
 nmap

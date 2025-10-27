@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin",
+  theme = "everblush",
   transparency = true,
 
   hl_override = {
@@ -14,7 +14,7 @@ M.base46 = {
     ["@comment"] = { italic = true },
   },
 
-  theme_toggle = { "catppuccin", "default-light" },
+  theme_toggle = { "everblush", "everforest_light" },
 }
 
 M.nvdash = {
@@ -33,7 +33,7 @@ M.nvdash = {
   },
 
   buttons = {
-    { txt = "󰉋  File Manager", keys = "fm", cmd = ":Oil" },
+    { txt = "󰉋  File Manager", keys = "fm", cmd = ":NvimTreeToggle" },
     { txt = "  Find File", keys = "ff", cmd = "Telescope find_files" },
     { txt = "  Recent Files", keys = "fo", cmd = "Telescope oldfiles" },
     { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },

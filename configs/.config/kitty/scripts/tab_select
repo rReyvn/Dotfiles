@@ -13,7 +13,7 @@ tab_titles=$(echo "$tab_info" | awk -F'|' '$2 == "false" {
 }')
 
 # Use fzf to fuzzy search the tab titles
-selected=$(echo "$tab_titles" | fzf --layout=reverse --prompt=' Switch Tab ➤ ' --color=pointer:#6791C9 --border)
+selected=$(echo "$tab_titles" | fzf --layout=reverse --prompt=' Switch Tab ➤ ' --color=prompt:4,pointer:4 --border)
 
 # If a tab was selected, focus on that tab using its ID
 if [ -n "$selected" ]; then

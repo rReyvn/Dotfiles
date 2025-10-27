@@ -1,19 +1,21 @@
 linux-cachyos-lts
 linux-cachyos-lts-headers
-tela-circle-icon-theme-standard
 bibata-cursor-git
-matugen-bin
 gvfs
 adw-gtk-theme
 xdg-desktop-portal-gtk
 dconf-editor
 gnome-tweaks
 gnome-disk-utility
-piper
 
 # Optional
+piper
 flatpak
 abaddon
+firefox-pure
+zen-browser-bin
+thunderbird
+bitwarden
 obs-studio-browser
 cava
 tty-clock

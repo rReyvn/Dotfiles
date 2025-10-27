@@ -8,3 +8,5 @@ set -gx NTFS_HDD_DIR /mnt/hdd/
 set -gx LINUX_HDD_DIR /mnt/linux-hdd/
 set -gx TERM xterm-256color
 set -gx EDITOR nvim
+set -gx GTK_USE_PORTAL 1
+set -gx GDK_DEBUG portals
