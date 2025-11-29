@@ -27,8 +27,24 @@ output_path = '~/.config/btop/themes/matugen.theme'
 [templates.gtk3]
 input_path = './templates/gtk.toml'
 output_path = '~/.config/gtk-3.0/colors.css'
-post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
 
 [templates.gtk4]
 input_path = './templates/gtk.toml'
 output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.kcolorscheme]
+input_path = './templates/kcolorscheme.colors'
+output_path = '~/.local/share/color-schemes/DankMatugen.colors'
+
+[templates.lightkcolorscheme]
+input_path = './templates/light-kcolorscheme.colors'
+output_path = '~/.local/share/color-schemes/DankMatugenLight.colors'
+
+[templates.darkkcolorscheme]
+input_path = './templates/dark-kcolorscheme.colors'
+output_path = '~/.local/share/color-schemes/DankMatugenDark.colors'
+
+# [templates.obsidian]
+# input_path = './templates/obsidian.css'
+# output_path = '~/Dev/Notes/ReyVault/.obsidian/themes/Matugen/matugen.css'
+
