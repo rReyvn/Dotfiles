@@ -1,71 +1,8 @@
-# SSH Setup
-
-- Generate SSH Key
-  ```sh
-  ssh-keygen -t ed25519 -f <ssh_file_name> -C <EMAIL_STRING>
-  ssh-agent -s
-  ssh-add .ssh/<ssh_file_name_alt_account>
-  ```
-- Setup SSH Key to Github
-- Create ssh config file (Default: ~/.ssh/config)
-
-  ```
-  Host github.com
-      HostName github.com
-      User git
-      IdentityFile ~/.ssh/<ssh_file_name>
-      IdentitiesOnly yes
-
-  Host github.com-alt
-      HostName github.com
-      User git
-      IdentityFile ~/.ssh/<ssh_file_name_alt>
-      IdentitiesOnly yes
-  ```
-
-# Virtual Machine Setup
-Install required packages (packages/arch/virtualization.lst)
-
-Start Service
-```
-sudo systemctl enable libvirtd
-sudo systemctl start libvirtd
-```
-
-Uncomment two line in /etc/libvirt/libvirtd.conf
-```
-unix_sock_group = "libvirt"
-unix_sock_ro_perms = "0777"
-```
-
-Add user account to libvirt group
-```
-sudo usermod -a -G kvm,libvirt $(whoami)
-```
-
-Auto start virtual machine network
-```
-sudo firewall-cmd --add-service=libvirt --permanent
-sudo virsh net-autostart default
-```
-Then reboot system.
-
-# Wifi driver fix
-```
-paru -S rtl8821ce-dkms-git
-```
-
 # Sync dual-boot bluetooth devices
 ```
 paru -S python-pipx chntpw
 pipx install bt-dualboot
 sudo ~/.local/bin/bt-dualboot --sync-all --backup
-```
-
-# External storage mount option
-```
-LABEL=Linux-HDD                             /mnt/linux-hdd   ext4    defaults,nofail,x-gvfs-show,x-gvfs-name=Linux-HDD                                          0 0 
-LABEL=HDD                                   /mnt/hdd         ntfs3   defaults,nofail,uid=1000,gid=1000                                                          0 0
 ```
 
 # Secure Boot Setup

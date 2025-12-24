@@ -1,14 +1,13 @@
-linux-cachyos-lts
-linux-cachyos-lts-headers
-bibata-cursor-git
 gvfs
 adw-gtk-theme
 xdg-desktop-portal-gtk
 dconf-editor
-gnome-tweaks
 gnome-disk-utility
 
 # Optional
+krita
+bibata-cursor-git
+gnome-tweaks
 piper
 flatpak
 abaddon

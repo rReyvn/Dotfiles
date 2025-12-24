@@ -10,3 +10,4 @@ set -gx TERM xterm-256color
 set -gx EDITOR nvim
 set -gx GTK_USE_PORTAL 1
 set -gx GDK_DEBUG portals
+set -gx CHROME_EXECUTABLE /usr/bin/brave
