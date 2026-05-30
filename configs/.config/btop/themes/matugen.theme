@@ -25,7 +25,7 @@ theme[hi_fg]="#b2ccc2"
 theme[selected_bg]="#86d6be"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#00382d"
+theme[selected_fg]="#00382c"
 
 # Color of inactive/disabled text
 theme[inactive_fg]="#bfc9c4"
@@ -66,12 +66,12 @@ theme[free_end]="#344c44"
 # Mem/Disk cached meter
 theme[cached_start]="#a9cbe3"
 theme[cached_mid]=""
-theme[cached_end]="#294a5e"
+theme[cached_end]="#294b5e"
 
 # Mem/Disk available meter
 theme[available_start]="#86d6be"
 theme[available_mid]=""
-theme[available_end]="#005142"
+theme[available_end]="#005141"
 
 # Mem/Disk used meter
 theme[used_start]="#ffb4ab"

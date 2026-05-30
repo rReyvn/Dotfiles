@@ -17,8 +17,7 @@
 /* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
-	/* --font: 'figtree'; */
-  --font: 'inter';
+	--font: 'figtree';
 
 	/* top left corner text */
 	--corner-text: 'Midnight';

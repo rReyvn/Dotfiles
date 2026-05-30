@@ -1,5 +1,5 @@
 function connect2android --description "Scrcpy android using ADB Wireless"
-    set DEVICE_IP "192.168.1.99"
+    set DEVICE_IP "192.168.1.29"
     set PORT_RANGE 30000-50000
 
     echo "[*] Scanning $DEVICE_IP for ADB wireless port..."
@@ -31,9 +31,17 @@ function connect2android --description "Scrcpy android using ADB Wireless"
             case screen
                 echo "[*] Connecting android phone screen"
                 notify-send --app-name "Connect to Android" --icon phone "Connected to android screen"
-                scrcpy --video-encoder=OMX.google.h264.encoder --max-size=1280 --audio-encoder=c2.android.opus.encoder --stay-awake --turn-screen-off
+                scrcpy --stay-awake --turn-screen-off
             case audio
                 echo "[*] Connecting android phone audio"
+                notify-send --app-name "Connect to Android" --icon phone "Connected to android audio"
+                scrcpy --no-video --stay-awake --no-window
+            case screen2
+                echo "[*] Connecting second android phone screen"
+                notify-send --app-name "Connect to Android" --icon phone "Connected to android screen"
+                scrcpy --video-encoder=OMX.google.h264.encoder --max-size=1280 --audio-encoder=c2.android.opus.encoder --stay-awake --turn-screen-off
+            case audio2
+                echo "[*] Connecting second android phone audio"
                 notify-send --app-name "Connect to Android" --icon phone "Connected to android audio"
                 scrcpy --no-video --audio-codec=opus --audio-encoder=c2.android.opus.encoder --stay-awake --no-window
             case '*'

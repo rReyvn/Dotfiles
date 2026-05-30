@@ -13,6 +13,7 @@ bat
 eza
 wl-clipboard
 neovim
+python-pynvim
 yazi
 jq
 unarchiver

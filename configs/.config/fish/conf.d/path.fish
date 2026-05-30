@@ -13,9 +13,14 @@ set -gx DENO_INSTALL_ROOT $HOME/.dot/deno
 set -gx BUN_INSTALL $HOME/.dot/bun
 set -gx IPYTHONDIR $HOME/.dot/ipython
 set -gx DOTNET_CLI_HOME $HOME/.dot/dotnet/cli
+set -Ux PYENV_ROOT $HOME/.dot/pyenv
 
-for dir in $HOME/.local/bin $BUN_INSTALL/bin $CARGO_HOME/bin $DENO_INSTALL_ROOT/bin/
+for dir in $HOME/.local/bin $NPM_CONFIG_PREFIX/bin $BUN_INSTALL/bin $CARGO_HOME/bin $DENO_INSTALL_ROOT/bin/
     if test -d $dir; and not contains -- $dir $PATH
         set -p PATH $dir
     end
 end
+
+test -d $PYENV_ROOT/bin; and fish_add_path $PYENV_ROOT/bin
+fnm env --use-on-cd --shell fish | source
+pyenv init - fish | source

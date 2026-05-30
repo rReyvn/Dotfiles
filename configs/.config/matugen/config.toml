@@ -12,9 +12,9 @@ input_path = './templates/kitty.toml'
 output_path = '~/.config/kitty/colors/material_you.conf'
 post_hook = 'pkill -SIGUSR1 kitty'
 
-[templates.vesktop]
-input_path = './templates/vesktop.toml'
-output_path = '~/.config/vesktop/themes/material_you.css'
+# [templates.vesktop]
+# input_path = './templates/vesktop.toml'
+# output_path = '~/.config/vesktop/themes/material_you.css'
 
 [templates.yazi]
 input_path = './templates/yazi.toml'
