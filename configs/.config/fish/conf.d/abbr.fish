@@ -1,6 +1,7 @@
 abbr k 'kitten ssh'
 abbr nv nvim
 abbr nvc 'nvim --clean'
+abbr hx helix
 abbr lg lazygit
 abbr te trash-empty
 abbr hw 'hwinfo --short'

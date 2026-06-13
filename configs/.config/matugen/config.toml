@@ -12,13 +12,17 @@ input_path = './templates/kitty.toml'
 output_path = '~/.config/kitty/colors/material_you.conf'
 post_hook = 'pkill -SIGUSR1 kitty'
 
-# [templates.vesktop]
-# input_path = './templates/vesktop.toml'
-# output_path = '~/.config/vesktop/themes/material_you.css'
+[templates.vesktop]
+input_path = './templates/discord.toml'
+output_path = '~/.config/equibop/themes/material_you.css'
 
 [templates.yazi]
 input_path = './templates/yazi.toml'
 output_path = '~/.config/yazi/theme.toml'
+
+[templates.helix]
+input_path = './templates/helix.toml'
+output_path = '~/.config/helix/themes/matugen.toml'
 
 [templates.btop]
 input_path = './templates/btop.toml'
@@ -31,6 +35,10 @@ output_path = '~/.config/gtk-3.0/colors.css'
 [templates.gtk4]
 input_path = './templates/gtk.toml'
 output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.obs]
+input_path = './templates/obs.obt'
+output_path = '~/.config/obs-studio/themes/matugen.obt'
 
 [templates.kcolorscheme]
 input_path = './templates/kcolorscheme.colors'
