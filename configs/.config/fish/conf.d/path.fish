@@ -21,6 +21,5 @@ for dir in $HOME/.local/bin $NPM_CONFIG_PREFIX/bin $BUN_INSTALL/bin $CARGO_HOME/
     end
 end
 
-test -d $PYENV_ROOT/bin; and fish_add_path $PYENV_ROOT/bin
 fnm env --use-on-cd --shell fish | source
-pyenv init - fish | source
+direnv hook fish | source

@@ -29,6 +29,11 @@ do
   vim.o.cursorline = true
   vim.o.scrolloff = 10
   vim.o.confirm = true
+  vim.o.tabstop = 2
+  vim.o.shiftwidth = 2
+  vim.o.softtabstop = 2
+  vim.o.expandtab = true
+  vim.o.smarttab = true
 
   transparent_bg()
   vim.api.nvim_create_autocmd('TextYankPost', {
