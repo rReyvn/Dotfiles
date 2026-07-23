@@ -1,4 +1,5 @@
 abbr k 'kitten ssh'
+abbr z zeditor
 abbr nv nvim
 abbr lg lazygit
 abbr te trash-empty

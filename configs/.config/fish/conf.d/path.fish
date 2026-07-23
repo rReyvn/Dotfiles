@@ -14,8 +14,10 @@ set -gx BUN_INSTALL $HOME/.dot/bun
 set -gx IPYTHONDIR $HOME/.dot/ipython
 set -gx DOTNET_CLI_HOME $HOME/.dot/dotnet/cli
 set -Ux PYENV_ROOT $HOME/.dot/pyenv
+set -gx FLUTTER_ROOT $HOME/Dev/Mobile/flutter/bin
+set -gx ANDROID_HOME $HOME/Dev/Mobile/android/sdk
 
-for dir in $HOME/.local/bin $NPM_CONFIG_PREFIX/bin $BUN_INSTALL/bin $CARGO_HOME/bin $DENO_INSTALL_ROOT/bin/
+for dir in $HOME/.local/bin $NPM_CONFIG_PREFIX/bin $BUN_INSTALL/bin $CARGO_HOME/bin $DENO_INSTALL_ROOT/bin/ $FLUTTER_ROOT $ANDROID_HOME/platform-tools
     if test -d $dir; and not contains -- $dir $PATH
         set -p PATH $dir
     end

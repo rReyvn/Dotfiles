@@ -5,6 +5,9 @@ nodejs
 rustup
 bun-bin
 deno
+fnm
+uv
+direnv
 
 docker ? podman podman-docker
 docker-compose ? podman-compose
