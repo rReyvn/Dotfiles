@@ -13,8 +13,6 @@ bat
 eza
 wl-clipboard
 neovim
-python-pynvim
-python-pipx
 chntpw
 yazi
 jq
@@ -33,3 +31,4 @@ rclone
 ufw
 scrcpy
 nmap
+matugen

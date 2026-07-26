@@ -35,7 +35,7 @@ do
   vim.o.expandtab = true
   vim.o.smarttab = true
 
-  vim.cmd("colorscheme catppuccin")
+  vim.cmd("colorscheme default")
   transparent_bg()
   vim.api.nvim_create_autocmd('TextYankPost', {
     desc = 'Highlight when yanking text',

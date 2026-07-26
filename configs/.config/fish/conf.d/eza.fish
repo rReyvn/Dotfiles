@@ -1,14 +1,14 @@
 if type -q eza
     function ls
-        eza -l --icons --group-directories-first --sort=size --hyperlink $argv
+        eza -l --icons --group-directories-first --sort=size --hyperlink auto $argv
     end
 
     function la
-        eza -Ga --icons --group-directories-first --hyperlink $argv
+        eza -Ga --icons --group-directories-first --hyperlink auto $argv
     end
 
     function ll
-        eza -lah --icons --group-directories-first --hyperlink $argv
+        eza -lah --icons --group-directories-first --hyperlink auto $argv
     end
 
     function lt

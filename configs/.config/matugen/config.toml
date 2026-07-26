@@ -2,11 +2,6 @@
 command = "plasma-apply-wallpaperimage" 
 set = false
 
-[templates.vicinae]
-input_path = './templates/vicinae.toml'
-output_path = '~/.local/share/vicinae/themes/matugen.toml'
-post_hook = 'vicinae theme set matugen'
-
 [templates.kitty]
 input_path = './templates/kitty.toml'
 output_path = '~/.config/kitty/themes/Matugen.conf'
@@ -32,10 +27,6 @@ output_path = '~/.config/gtk-3.0/colors.css'
 input_path = './templates/gtk.toml'
 output_path = '~/.config/gtk-4.0/colors.css'
 
-[templates.obs]
-input_path = './templates/obs.obt'
-output_path = '~/.config/obs-studio/themes/matugen.obt'
-
 [templates.vscode-raw]
 input_path = './templates/vscode-colors'
 output_path = '~/.cache/matugen/vscode-colors'
@@ -43,14 +34,6 @@ output_path = '~/.cache/matugen/vscode-colors'
 [templates.vscode-json]
 input_path = './templates/vscode-colors.json'
 output_path = '~/.cache/matugen/vscode-colors.json'
-
-[templates.opencode]
-input_path = './templates/opencode.json'
-output_path = '~/.config/opencode/themes/matugen.json'
-
-[templates.zed]
-input_path = './templates/zed.json'
-output_path = '~/.config/zed/themes/matugen.json'
 
 [templates.kcolorscheme]
 input_path = './templates/kcolorscheme.colors'
