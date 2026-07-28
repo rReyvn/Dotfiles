@@ -1,5 +1,5 @@
-plasma-install:
+config-install:
 	stow --verbose --target=$$HOME/ --restow configs
 
-plasma-uninstall:
+config-uninstall:
 	stow --verbose --target=$$HOME/ --delete configs
