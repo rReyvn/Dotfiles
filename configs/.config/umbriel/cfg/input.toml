@@ -1,0 +1,31 @@
+[input]
+middle_click_paste = true
+window_drag_toggle = "none"
+
+[input.keyboard]
+layout = ""
+variant = ""
+options = "caps:escape_shifted_capslock"
+repeat_rate = 25
+repeat_delay = 600
+numlock_toggle = true
+track_layout = "global"
+
+[input.touchpad]
+tap = true                                      # Tap-to-click
+natural_scroll = true                           # Omit to preserve the libinput default
+
+[input.mouse]
+sensitivity = 0.0                               # Pointer speed, -1.0 to 1.0
+scroll_wheel_step = 60                          # Logical pixels per layout-scroll action, 1-1000
+
+[input.cursor]
+theme = "breeze_cursors"                        # Empty uses environment or default Xcursor theme
+size = 24                                       # Logical size, 1-512
+hardware_cursor = true                          # False forces cursor composition
+follows_focus = false                           # Warp to windows selected by focus, output, move, or other activations
+hide_when_typing = true                         # Keep visible while typing
+hide_timeout_ms = 0                             # Idle hide timeout, 0 disables; maximum is 3600000
+
+[input.focus]
+follows_mouse = false                           # Focus on pointer motion and Dwindle/master tiles revealed on close

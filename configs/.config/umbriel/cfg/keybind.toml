@@ -1,0 +1,79 @@
+[keybinds]
+# Applications and session
+"Mod+Return" = "spawn:kitty"
+"Mod+T" = "spawn:kitten quick-access-terminal"
+"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Q" = "window-close"
+"Mod+E" = "spawn:nautilus"
+"Mod+B" = "spawn:brave-origin"
+
+# Noctalia Integration
+"Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
+"Mod+Shift+N" = "spawn:noctalia msg panel-toggle noctalia/notes:panel"
+"Mod+Shift+S" = "spawn:noctalia msg screenshot-region"
+"Mod+Shift+R" = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle"
+"Mod+Shift+Backspace" = "spawn:noctalia msg panel-toggle session"
+
+# Focus & Move navigation
+"Mod+H" = "window-focus-left"
+"Mod+L" = "window-focus-right"
+"Mod+U" = "window-focus-up"
+"Mod+D" = "window-focus-down"
+"Mod+C" = "column-center"
+"Mod+Shift+H" = "column-move-left"
+"Mod+Shift+L" = "column-move-right"
+"Mod+Shift+U" = "window-move-up"
+"Mod+Shift+D" = "window-move-down"
+"Mod+MouseBack" = { action = "window-focus-left", cooldown_ms = 150 }
+"Mod+MouseForward" = { action = "window-focus-right", cooldown_ms = 150 }
+"Mod+Shift+MouseBack" = { action = "column-move-left", cooldown_ms = 150 }
+"Mod+Shift+MouseForward" = { action = "column-move-right", cooldown_ms = 150 }
+
+# Window state and layout
+"Mod+F" = "window-cycle-primary-extent"
+"Mod+Shift+F" = "window-toggle-fullscreen"
+"Mod+Ctrl+F" = "window-toggle-floating"
+"Mod+Alt+F" = "window-focus-switch-floating"
+"Mod+Ctrl+P" = "window-toggle-pinned"
+"Mod+Ctrl+M" = "window-toggle-maximize-to-edges"
+
+# Overview
+"Mod+Tab" = { action = "overview-toggle", repeat = false }
+
+# Workspaces
+"Mod+J" = "workspace-next"
+"Mod+K" = "workspace-previous"
+"Mod+WheelUp" = "workspace-previous"
+"Mod+WheelDown" = "workspace-next"
+"Mod+Shift+WheelDown" = "window-move-to-workspace-next"
+"Mod+Shift+WheelUp" = "window-move-to-workspace-previous"
+"Mod+Shift+J" = "window-move-to-workspace-next"
+"Mod+Shift+K" = "window-move-to-workspace-previous"
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+"Mod+Shift+1" = "window-move-to-workspace:1"
+"Mod+Shift+2" = "window-move-to-workspace:2"
+"Mod+Shift+3" = "window-move-to-workspace:3"
+"Mod+Shift+4" = "window-move-to-workspace:4"
+"Mod+Shift+5" = "window-move-to-workspace:5"
+"Mod+Shift+6" = "window-move-to-workspace:6"
+"Mod+Shift+7" = "window-move-to-workspace:7"
+"Mod+Shift+8" = "window-move-to-workspace:8"
+"Mod+Shift+9" = "window-move-to-workspace:9"
+
+# Media and brightness
+"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up 5"
+"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down 5"
+"XF86AudioMute" = "spawn:noctalia msg volume-mute"
+"XF86AudioPlay" = "spawn:noctalia msg media toggle"
+"XF86AudioNext" = "spawn:noctalia msg media next"
+"XF86AudioPrev" = "spawn:noctalia msg media previous"
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down 5", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up 5", allow_when_locked = true }

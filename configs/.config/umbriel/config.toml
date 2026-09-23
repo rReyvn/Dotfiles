@@ -1,0 +1,13 @@
+[include]
+files = [
+  "cfg/general.toml",
+  "cfg/input.toml",
+  "cfg/keybind.toml",
+  "cfg/layout.toml",
+  "cfg/misc.toml",
+  "cfg/rules.toml",
+  "noctalia.toml",
+]
+
+[include.optional]
+files = []

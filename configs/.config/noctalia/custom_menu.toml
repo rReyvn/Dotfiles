@@ -1,0 +1,33 @@
+# Color Picker
+[shell.launcher.dmenu.entry.color_picker]
+label = "Color Picker"
+glyph = "noctalia"
+global = true
+command = "printf 'Color Picker\\tToggle color picker panel\\n'"
+exec = "noctalia msg panel-toggle oldirtty/color_picker:panel"
+
+# Noctalia Settings
+[shell.launcher.dmenu.entry.settings]
+label = "Settings"
+glyph = "noctalia"
+global = true
+command = "printf 'Settings\\tOpen noctalia settings\\n'"
+exec = "noctalia msg settings-toggle"
+
+# Android Connect
+[shell.launcher.dmenu.entry.android]
+label = "Android Connect"
+prefix = "android"
+glyph = "brand-android"
+global = true
+command = "printf 'Android Audio Connect\\tConnect audio to Android\\nAndroid Screen Connect\\tConnect screen to Android\\n'"
+exec = "case \"{selection}\" in \"Android Audio Connect\"*) connect2android audio ;; \"Android Screen Connect\"*) connect2android screen ;; esac"
+
+# Discord / Equibop
+[shell.launcher.dmenu.entry.discord]
+label = "Discord"
+prefix = "dc"
+glyph = "brand-discord"
+global = true
+command = "printf 'Discord Mute Toggle\\tToggle Discord microphone\\nDiscord Deafen Toggle\\tToggle Discord deafen\\n'"
+exec = "case \"{selection}\" in \"Discord Mute Toggle\"*) equibop --toggle-mic ;; \"Discord Deafen Toggle\"*) equibop --toggle-deafen ;; esac"

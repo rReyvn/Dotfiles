@@ -1,0 +1,78 @@
+# Noctalia
+noctalia
+
+# Apps
+brave-origin-bin
+equibop
+localsend
+prismlauncher
+zed
+
+# CLI
+kitty
+fish
+git
+stow
+zoxide
+fzf
+ripgrep
+fd
+duf
+bat
+eza
+wl-clipboard
+neovim
+chntpw
+yazi
+jq
+resvg
+unarchiver
+lazygit
+btop
+tokei
+yt-dlp
+trash-cli
+ncdu
+sbctl
+rsync
+tealdeer
+rclone
+ufw
+scrcpy
+nmap
+matugen
+gpu-screen-recorder
+ydotool
+
+# Development
+vscodium
+python-pipx
+android-tools
+rustup
+fnm
+uv
+direnv
+jdk21-openjdk
+jdk25-openjdk
+
+docker ? podman podman-docker
+docker-compose ? podman-compose
+
+# Extras
+7zip
+ttf-jetbrains-mono-nerd
+adw-gtk-theme
+gnome-disk-utility
+gnome-keyring
+nautilus
+gvfs-dnssd
+file-roller
+gnome-calculator
+loupe
+papers
+snapshots
+celluloid
+qt6ct
+breeze
+nwg-look
+papirus-icon-theme

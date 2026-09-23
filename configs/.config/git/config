@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[color]
+  ui = true
+[user]
+  name = rReyvn
+  email = reyvn029@gmail.com
+[core]
+	autocrlf = input

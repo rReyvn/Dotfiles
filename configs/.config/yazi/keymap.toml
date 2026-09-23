@@ -1,0 +1,17 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "." ]
+run  = "cd ~/Dev/Dotfiles"
+for  = "linux"
+desc = "Cd to Dotfiles"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "1" ]
+run  = "cd /mnt/Linux-HDD"
+for  = "linux"
+desc = "Cd to Linux HDD"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "2" ]
+run  = "cd /mnt/HDD"
+for  = "linux"
+desc = "Cd to NTFS HDD"
